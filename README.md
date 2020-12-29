@@ -33,15 +33,15 @@ my pydev environment installation steps:
 	~/.vim/bundle/vim-airline-themes/autoload/airline/themes/
 
 - check F keys:
-	<F2> CtrlP in MRU (Most Recently Used files)
-	<F3> CtrlP in buffers (check color scheme in CtrlP window)
-	<F4> NERDTree toggle (use o (opens in buffer) or t (opens in tab)
+	`<F2>` CtrlP in MRU (Most Recently Used files)
+	`<F3>` CtrlP in buffers (check color scheme in CtrlP window)
+	`<F4>` NERDTree toggle (use o (opens in buffer) or t (opens in tab)
 		 to open files, not Enter, see help)
-	<F7> flake8 check
-	<F8> tagbar (check jumping from tag to source code by <Enter>)
-	<F9> prev buffer
-	<F10> next buffer
-	<F11> last used buffer
+	`<F7>` flake8 check
+	`<F8>` tagbar (check jumping from tag to source code by <Enter>)
+	`<F9>` prev buffer
+	`<F10>` next buffer
+	`<F11>` last used buffer
 - check colors in normal, insert, visual modes and in all plugins:
 	- CtrlP
 	- tagbar
