@@ -135,8 +135,6 @@ nnoremap <F4> :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen = 1
 
 " CtrlP is better than NERDTree, because CtrlP is Fuzzy Finder. Use it more!
-nnoremap <F3> :CtrlPBuffer<CR>
-nnoremap <F2> :CtrlPMRU<CR>
 
 " temporary command - just to create color scheme
 nnoremap <F5> :so $VIMRUNTIME/syntax/hitest.vim<CR>
