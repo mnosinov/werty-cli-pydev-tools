@@ -128,6 +128,7 @@ let g:syntastic_python_pylint_post_args = [ '--max-line-length=80',
 	\ '--variable-rgx=[a-z_][a-z0-9_]{0,30}$'
 	\ ]
 let g:syntastic_python_checkers=['flake8']
+let g:syntastic_python_flake8_args='--ignore=E501,E225'
 
 " NERDTree plugin customization - use CtrlP instead this plugin.
 let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
@@ -137,6 +138,7 @@ let NERDTreeQuitOnOpen = 1
 " CtrlP is better than NERDTree, because CtrlP is Fuzzy Finder. Use it more!
 nnoremap <F3> :CtrlPBuffer<CR>
 nnoremap <F2> :CtrlPMRU<CR>
+set wildignore+=*/__pycache__/* 
 
 " temporary command - just to create color scheme
 nnoremap <F5> :so $VIMRUNTIME/syntax/hitest.vim<CR>
