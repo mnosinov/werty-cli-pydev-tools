@@ -132,7 +132,7 @@ let g:syntastic_python_flake8_args='--ignore=E501,E225'
 
 " NERDTree plugin customization - use CtrlP instead this plugin.
 let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
-nnoremap <F4> :NERDTreeToggle<CR>
+nnoremap <F12> :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen = 1
 
 " CtrlP is better than NERDTree, because CtrlP is Fuzzy Finder. Use it more!
