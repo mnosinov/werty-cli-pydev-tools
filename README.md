@@ -12,7 +12,7 @@ my pydev environment installation steps:
 - install vim
 - copy .vimrc
 - run install_vundle.sh
-- `apt git-install vim-gtk`
+- `apt install vim-gtk`
 - copy werty-tty.vim color scheme to .vim/colors
 - copy ru.utf-8.spl and ru.utf-8.sug spell files to .vim/spell
 - run `:PluginInstall` in vim
