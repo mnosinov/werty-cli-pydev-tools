@@ -66,7 +66,7 @@ my pydev environment installation steps:
 	```
 - config github - specify global user name and email
 - register my ssh public key in github to push without username
-
+- install python virtualenv
 - install pgcli
 - install mycli
 - install litecli
