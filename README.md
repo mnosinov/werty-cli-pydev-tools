@@ -70,6 +70,8 @@ my pydev environment installation steps:
 - install pgcli
 - install mycli
 - install litecli
-- you can use tty_colors_pallete.sh to print available colors pallete in terminal or tty
+- you can use tty_colors_pallete.sh to print available colors pallete in terminal or tty - for background colors
+- you can use colortest.py to print available colors pallete in terminal or tty - for foreground colors
+
 
 
