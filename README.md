@@ -42,7 +42,7 @@ my pydev environment installation steps:
 - check F keys:
 	- `<F2>` CtrlP in MRU (Most Recently Used files)
 	- `<F3>` CtrlP in buffers (check color scheme in CtrlP window)
-	- `<F4>` NERDTree toggle (use o (opens in buffer) or t (opens in tab)
+	- `<F12>` NERDTree toggle (use o (opens in buffer) or t (opens in tab)
 		 to open files, not Enter, see help)
 	- `<F7>` flake8 check
 	- `<F8>` tagbar (check jumping from tag to source code by `<Enter>`)
@@ -64,7 +64,6 @@ my pydev environment installation steps:
 	```sh
   	ssh-keygen
 	```
-- install git
 - config github - specify global user name and email
 - register my ssh public key in github to push without username
 
