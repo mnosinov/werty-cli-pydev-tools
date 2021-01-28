@@ -10,6 +10,7 @@ my pydev environment installation steps:
 - install htop
 - install tree
 - install vim
+- install git
 - copy .vimrc
 - run install_vundle.sh
 - `apt install vim-gtk`
