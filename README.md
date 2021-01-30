@@ -7,6 +7,8 @@ my pydev environment installation steps:
 - copy .tmux.conf
 - install tmux plugin manager: ```git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm```
 	- .tmux.conf is already reade to use - with tmux-resurrect included. Don't forget to source this config. While been in tmux - <Prefix> + I
+	- tmux resurrect use:   ```save - <Prefix> + Ctrl+s```
+				```restore - <Prefix> + Ctrl+r```
 - install mc
 - install zip, unzip
 - install htop
