@@ -31,6 +31,10 @@ my pydev environment installation steps:
 	 	cd ~/.vim/bundle/YouCompleteMe
 		python3 install.py --all
 		```
+- use vim sessions:
+	- to create default vim session (Session.vim) in current location: :mksession or :mks
+	- to load previously saved session: :source Session.vim
+	- to save current session: :mks!
 
 - for vim flake8 checking install flake8:
 	```sh
