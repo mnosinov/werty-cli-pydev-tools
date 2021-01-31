@@ -118,3 +118,7 @@ fi
 
 # colors of files, directories, etc
 LS_COLORS=$LS_COLORS:'di=0;36:' ; export LS_COLORS
+
+# disable Software Flow Control XON/XOFF flow control
+# so Ctrl+s doesn't scroll lock
+stty -ixon
