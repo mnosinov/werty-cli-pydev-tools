@@ -215,4 +215,11 @@ nmap <F8> :TagbarToggle<CR>
 let g:tagbar_autoclose = 1
 
 
+" save current file key mapping - Ctrl+s
+nmap <C-s> :w<CR>
+imap <C-s> <Esc>:w<CR>a
+" save all opend buffers mapping - Shift+Ctrl+s
+nmap <C-S-s> :wa<CR>
+imap <C-S-s> <Esc>:wa<CR>a
+
 filetype plugin indent on    " required for Vundle
