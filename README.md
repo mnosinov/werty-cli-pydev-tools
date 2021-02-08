@@ -80,7 +80,7 @@ my pydev environment installation steps:
 - install litecli
 - you can use tty_colors_pallete.sh to print available colors pallete in terminal or tty - for background colors
 - you can use colortest.py to print available colors pallete in terminal or tty - for foreground colors
-- you can use nice fonts for development - GNU Unifont, or my converted FixedSys fonts in the folder FixedSys_font
+- you can use nice font that is modified GNU Unifont (I modified only one letter 't' to look like in tty linux) find this ttf font in werty_gnu_unifont_t_letter_is_modified folder
 
 
 
