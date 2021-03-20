@@ -155,8 +155,13 @@ nnoremap <F11> :b #<CR>
 " jump to buffer by number from list (:ls)
 :cnoremap ls ls<cr>:b
 
-" turn off line numbers
-"set nu!
+turn off line numbers
+set nu!
+" turn on line numbers
+"set nu
+" turn on relative numbers
+set rnu
+
 
 let g:airline_theme='badwolf'
 "let g:airline_theme='murmur'
