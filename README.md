@@ -38,6 +38,7 @@ my pydev environment installation steps:
 
 - for vim flake8 checking install flake8:
 	```sh
+	sudo apt install python3-pip
 	pip3 install flake8
 	```
 - install ctags:
