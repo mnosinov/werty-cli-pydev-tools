@@ -41,7 +41,7 @@ my pydev environment installation steps:
 	sudo apt install python3-pip
 	pip3 install flake8
 	```
-- install ctags:
+- install ctags (usage Ctr+] on variable, function or class):
 	```sh
 	sudo apt install ctags exuberant-ctags
 	```
