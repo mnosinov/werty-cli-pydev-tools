@@ -43,7 +43,7 @@ my pydev environment installation steps:
 	```
 - install ctags:
 	```sh
-	sudo apt install ctags
+	sudo apt install ctags exuberant-ctags
 	```
 - copy/replace badwolf.vim to
 	`~/.vim/bundle/vim-airline-themes/autoload/airline/themes/`
