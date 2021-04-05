@@ -145,7 +145,7 @@ set wildignore+=*/__pycache__/*
 
 " temporary command - just to create color scheme
 nnoremap <F5> :so $VIMRUNTIME/syntax/hitest.vim<CR>
-nnoremap <F7> :Ag<CR>
+nnoremap <C-g> :Ag<CR>
 
 " Use buffers more than tabs
 " F9 - go to previous buffer
