@@ -35,6 +35,13 @@ my pydev environment installation steps:
 	- to create default vim session (Session.vim) in current location: :mksession or :mks
 	- to load previously saved session: :source Session.vim
 	- to save current session: :mks!
+- fzf dependencies silver:
+	Ag: requires The Silver Searcher (ag)
+		`apt install silversearcher-ag`
+	Rg: requires ripgrep (rg)
+		`apt install ripgrep`
+
+- fzf installation - download binaries for fzf. While in vim :Files
 
 - for vim flake8 checking install flake8:
 	```sh
