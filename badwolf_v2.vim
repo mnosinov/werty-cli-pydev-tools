@@ -1,15 +1,15 @@
 let s:N1 = [ '#141413' , '#aeee00' , 10 , 19 ] " blackestgravel & lime
-let s:N2 = [ '#f4cf86' , '#45413b' , 7 , 13 ] " dirtyblonde    & deepgravel
-let s:N3 = [ '#8cffba' , '#242321' , 3 , 13 ] " saltwatertaffy & darkgravel
+let s:N2 = [ '#f4cf86' , '#45413b' , 7 , 5 ] " dirtyblonde    & deepgravel
+let s:N3 = [ '#8cffba' , '#242321' , 3 , 5 ] " saltwatertaffy & darkgravel
 let s:N4 = [ '#666462' , 241 ]                   " mediumgravel
 
 let s:I1 = [ '#141413' , '#0a9dff' , 3 , 10  ] " blackestgravel & tardis
-let s:I2 = [ '#f4cf86' , '#005fff' , 7 , 13  ] " dirtyblonde    & facebook
-let s:I3 = [ '#0a9dff' , '#242321' , 3  , 13 ] " tardis         & darkgravel
+let s:I2 = [ '#f4cf86' , '#005fff' , 7 , 5  ] " dirtyblonde    & facebook
+let s:I3 = [ '#0a9dff' , '#242321' , 3  , 5 ] " tardis         & darkgravel
 
 let s:V1 = [ '#141413' , '#ffa724' , 14 , 182 ] " blackestgravel & orange
-let s:V2 = [ '#000000' , '#fade3e' , 7 , 13 ] " coal           & dalespale
-let s:V3 = [ '#000000' , '#b88853' , 3 , 13 ] " coal           & toffee
+let s:V2 = [ '#000000' , '#fade3e' , 7 , 5 ] " coal           & dalespale
+let s:V3 = [ '#000000' , '#b88853' , 3 , 5 ] " coal           & toffee
 let s:V4 = [ '#c7915b' , 173 ]                   " coffee
 
 let s:PA = [ '#f4cf86' , 222 ]                   " dirtyblonde
