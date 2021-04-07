@@ -3,7 +3,7 @@ let s:N2 = [ '#f4cf86' , '#45413b' , 7 , 13 ] " dirtyblonde    & deepgravel
 let s:N3 = [ '#8cffba' , '#242321' , 3 , 13 ] " saltwatertaffy & darkgravel
 let s:N4 = [ '#666462' , 241 ]                   " mediumgravel
 
-let s:I1 = [ '#141413' , '#0a9dff' , 15 , 10  ] " blackestgravel & tardis
+let s:I1 = [ '#141413' , '#0a9dff' , 3 , 10  ] " blackestgravel & tardis
 let s:I2 = [ '#f4cf86' , '#005fff' , 7 , 13  ] " dirtyblonde    & facebook
 let s:I3 = [ '#0a9dff' , '#242321' , 3  , 13 ] " tardis         & darkgravel
 
