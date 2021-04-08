@@ -1,6 +1,8 @@
 my pydev environment installation steps:
 ========================================
 
+for non tty modes - use terminal app - "terminology" with some color customization and key customization, theme 2nd by order.
+
 - copy .inputrc
 - copy .bashrc
 - install tmux - use tmux from the start!
