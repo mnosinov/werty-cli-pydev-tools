@@ -73,7 +73,7 @@ let s:bwc.LightCyan = ['ffff0f', 'LightCyan']
 
 " Default Syntax colors tweeks
 call s:HL('Normal', 'Silver', '', 'None', '')
-call s:HL('Comment', 'Gray', '', 'italic', '')
+call s:HL('Comment', 'Gray', '', 'None', '')
 call s:HL('Cursor', '', '', 'inverse', '')
 call s:HL('CursorLine', 'White', 'Blue', '', '')
 call s:HL('SpecialKey', 'Purple', '', '', '')
