@@ -136,11 +136,14 @@ let g:syntastic_python_flake8_args='--ignore=E126,E127,E131,E501,E225,W504'
 " NERDTree plugin customization - use CtrlP instead this plugin.
 let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 nnoremap <F12> :NERDTreeToggle<CR>
+inoremap <F12> <Esc> :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen = 1
 
 " CtrlP is better than NERDTree, because CtrlP is Fuzzy Finder. Use it more!
 nnoremap <F3> :CtrlPBuffer<CR>
+inoremap <F3> <Esc> :CtrlPBuffer<CR>
 nnoremap <F2> :CtrlPMRU<CR>
+inoremap <F2> <Esc> :CtrlPMRU<CR>
 set wildignore+=*/__pycache__/* 
 
 " temporary command - just to create color scheme
@@ -152,8 +155,11 @@ nnoremap <C-g> :Ag<CR>
 " F10 - go to next buffer
 " F11 - go to last used buffer
 nnoremap <F9> :bprevious<CR> 
+inoremap <F9> <Esc> :bprevious<CR> 
 nnoremap <F10> :bnext<CR>
+inoremap <F10> <Esc> :bnext<CR>
 nnoremap <F11> :b #<CR>
+inoremap <F11> <Esc> :b #<CR>
 " jump to buffer by number from list (:ls)
 :cnoremap ls ls<cr>:b
 
@@ -225,6 +231,7 @@ highlight lCursor guifg=NONE guibg=Cyan
 set tags=tags,./tags
 
 nmap <F8> :TagbarToggle<CR>
+imap <F8> <Esc> :TagbarToggle<CR>
 let g:tagbar_autoclose = 1
 
 
@@ -234,6 +241,6 @@ let g:tagbar_autoclose = 1
 "imap <C-s> <Esc>:w<CR>a
 " save all opend buffers mapping - Shift+Ctrl+s
 nmap <C-s> :wa<CR>:call system('ctags --recurse=yes')<CR>
-imap <C-s> <Esc>:wa<CR>a
+imap <C-s> <Esc>:wa<CR>
 
 filetype plugin indent on    " required for Vundle
