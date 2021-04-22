@@ -144,7 +144,8 @@ nnoremap <F3> :CtrlPBuffer<CR>
 inoremap <F3> <Esc> :CtrlPBuffer<CR>
 nnoremap <F2> :CtrlPMRU<CR>
 inoremap <F2> <Esc> :CtrlPMRU<CR>
-set wildignore+=*/__pycache__/* 
+set wildignore+=*/__pycache__/*,*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store,*/vendor,tags
+
 
 " temporary command - just to create color scheme
 nnoremap <F5> :so $VIMRUNTIME/syntax/hitest.vim<CR>
