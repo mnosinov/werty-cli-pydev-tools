@@ -241,7 +241,7 @@ let g:tagbar_autoclose = 1
 "nmap <C-s> :!ctags --recurse=yes<CR>
 "imap <C-s> <Esc>:w<CR>a
 " save all opend buffers mapping - Shift+Ctrl+s
-nmap <C-s> :wa<CR>:call system('ctags --recurse=yes')<CR>
+nmap <C-s> :wa<CR>:call system('ctags --recurse=yes --exclude=node_modules --exclude=.git --exclude=__pycache__')<CR>
 imap <C-s> <Esc>:wa<CR>
 
 filetype plugin indent on    " required for Vundle
