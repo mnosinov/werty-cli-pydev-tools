@@ -90,7 +90,7 @@ sudo apt install enlightenment terminology
 - config github - specify global user name and email
 - register my ssh public key in github to push without username
 - install python virtualenv
-- install pgcli
+- ```pip3 install pgcli```, but before install postgres ```
 - install mycli
 - install litecli
 - you can use tty_colors_pallete.sh to print available colors pallete in terminal or tty - for background colors
