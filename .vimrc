@@ -198,6 +198,7 @@ let g:airline_theme='badwolf'
 "let g:airline#extensions#tabline#show_tab_nr = 1
 "let g:airline#extensions#tabline#tab_nr_type= 2
 "let g:airline#extensions#tabline#show_tab_type = 1
+let g:airline_section_z = "%p%% Ln:%l/%L Col:%c"
 let g:airline#extensions#keymap#enabled = '0'
 let g:airline#extensions#branch#enabled = 1
 let g:airline_detect_spelllang=0
