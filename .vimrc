@@ -30,6 +30,8 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tmhedberg/SimpylFold'
+Plugin 'mattn/emmet-vim'
+Plugin 'Yggdroot/indentLine'
 "Plugin 'morhetz/gruvbox'
 
 " All of your Plugins must be added before the following line------------
@@ -131,7 +133,7 @@ let g:syntastic_python_pylint_post_args = [ '--max-line-length=80',
 	\ '--variable-rgx=[a-z_][a-z0-9_]{0,30}$'
 	\ ]
 let g:syntastic_python_checkers=['flake8']
-let g:syntastic_python_flake8_args='--ignore=E501,E225,W504'
+let g:syntastic_python_flake8_args='--ignore=E126,E127,E131,E501,E225,W504'
 
 " NERDTree plugin customization - use CtrlP instead this plugin.
 let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
@@ -144,11 +146,11 @@ nnoremap <F3> :CtrlPBuffer<CR>
 inoremap <F3> <Esc> :CtrlPBuffer<CR>
 nnoremap <F2> :CtrlPMRU<CR>
 inoremap <F2> <Esc> :CtrlPMRU<CR>
-set wildignore+=*/__pycache__/* 
+set wildignore+=*/__pycache__/*,*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store,*/vendor,tags
+
 
 " temporary command - just to create color scheme
 nnoremap <F5> :so $VIMRUNTIME/syntax/hitest.vim<CR>
-nnoremap <C-g> :Ag<CR>
 
 " Use buffers more than tabs
 " F9 - go to previous buffer
@@ -170,28 +172,45 @@ set nu!
 " turn on relative numbers
 set rnu
 
+" fzf customization
+"command! -bang -nargs=* Ag
+"  \ call fzf#vim#grep(
+"  \   'ag --column --numbers --noheading --color --smart-case '.shellescape(<q-args>), 1,
+"  \   fzf#vim#with_preview(), <bang>0)
+"nnoremap <C-g> :Ag<CR>
+nnoremap <C-g> :Ag <C-R><C-W><CR>
 
 let g:airline_theme='badwolf'
+"let g:airline_theme='molokai'
 "let g:airline_theme='murmur'
-let g:airline_solarized_bg='dark'
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_powerline_fonts = 0
-let g:airline#extensions#tabline#show_splits = 0
-let g:airline#extensions#tabline#fnamemod = ':t'
-let g:airline#extensions#tabline#left_sep = ' '
-let g:airline#extensions#tabline#left_alt_sep = ''
-let g:airline#extensions#tabline#right_sep = '|'
-let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
-let g:airline#extensions#tabline#tabs_label = ''
-let g:airline#extensions#tabline#buffer_nr_show = 1
-let g:airline#extensions#tabline#buffer_idx_mode = 0
-let g:airline#extensions#tabline#show_tab_nr = 1
-let g:airline#extensions#tabline#tab_nr_type= 2
-let g:airline#extensions#tabline#show_tab_type = 1
+"let g:airline_solarized_bg='dark'
+"let g:airline#extensions#tabline#enabled = 0
+"let g:airline_powerline_fonts = 0
+"let g:airline#extensions#tabline#show_splits = 0
+"let g:airline#extensions#tabline#fnamemod = ':t'
+"let g:airline#extensions#tabline#left_sep = ' '
+"let g:airline#extensions#tabline#left_alt_sep = ''
+"let g:airline#extensions#tabline#right_sep = '|'
+"let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
+"let g:airline#extensions#tabline#tabs_label = ''
+"let g:airline#extensions#tabline#buffer_nr_show = 1
+"let g:airline#extensions#tabline#buffer_idx_mode = 0
+"let g:airline#extensions#tabline#show_tab_nr = 1
+"let g:airline#extensions#tabline#tab_nr_type= 2
+"let g:airline#extensions#tabline#show_tab_type = 1
 let g:airline#extensions#keymap#enabled = '0'
 let g:airline#extensions#branch#enabled = 1
 let g:airline_detect_spelllang=0
 let g:airline_detect_spell=0
+
+" indentLine Plugin - show vertical intendation
+let g:indentLine_enabled = 0
+let g:indentLine_char = '|'
+"let g:indentLine_char = '·'
+"let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+"let g:indentLine_concealcursor = 'inc'
+let g:indentLine_conceallevel = 2
+
 
 " battery indicator
 "set statusline=...%{battery#component()}...
@@ -202,7 +221,7 @@ let g:airline_detect_spell=0
 let g:python_highlight_space_errors = 0
 
 " Always show tabs
-set showtabline=2
+"set showtabline=2
 
 " We don't need to see things like -- INSERT -- anymore
 set noshowmode
@@ -228,8 +247,14 @@ nmap <F8> :TagbarToggle<CR>
 imap <F8> <Esc> :TagbarToggle<CR>
 let g:tagbar_autoclose = 1
 
-" save all opend buffers mapping and regenerate ctags file - Ctrl+s
-nmap <C-s> :wa<CR>:call system('ctags --recurse=yes')<CR>
+
+" save current file key mapping - Ctrl+s
+"nmap <C-s> :w<CR>k
+"nmap <C-s> :!ctags --recurse=yes<CR>
+"imap <C-s> <Esc>:w<CR>a
+" save all opend buffers mapping - Shift+Ctrl+s
+nmap <C-s> :wa<CR>:call system('ctags --recurse=yes --exclude=node_modules --exclude=.git --exclude=__pycache__')<CR>
 imap <C-s> <Esc>:wa<CR>
 
 filetype plugin indent on    " required for Vundle
+runtime macros/matchit.vim
