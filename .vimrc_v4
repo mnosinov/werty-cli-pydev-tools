@@ -177,8 +177,8 @@ set rnu
 "  \ call fzf#vim#grep(
 "  \   'ag --column --numbers --noheading --color --smart-case '.shellescape(<q-args>), 1,
 "  \   fzf#vim#with_preview(), <bang>0)
-"nnoremap <C-g> :Ag<CR>
-nnoremap <C-g> :Ag <C-R><C-W><CR>
+nnoremap <C-g> :Rg<CR>
+"nnoremap <C-g> :Ag <C-R><C-W><CR>
 
 let g:airline_theme='badwolf'
 "let g:airline_theme='molokai'
