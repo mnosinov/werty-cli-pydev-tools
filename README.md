@@ -1,11 +1,10 @@
 my pydev environment installation steps:
 ========================================
 
-for non tty modes - use terminal app - "terminology" with some color customization and key customization, theme 2nd by order. Intall terminology from the below repository:
+for non tty modes - use terminal app - "Konsole" with some font and keyboard shortcuts (for full screen mode) customization, theme "White on Black".
 ```
-sudo add-apt-repository ppa:niko2040/e19
 sudo apt update
-sudo apt install enlightenment terminology
+sudo apt install konsole
 ```
 - copy .inputrc
 - copy .bashrc
