@@ -1,11 +1,11 @@
-if empty($DISPLAY)
-	let purple = 5
-	let yellow = 3
-	let lightgreen = 10
-else
+if !empty($DISPLAY) || !empty($SSH_CONNECTION)
 	let purple = 53
 	let yellow = 214
 	let lightgreen = 34
+else
+	let purple = 5
+	let yellow = 3
+	let lightgreen = 10
 endif
 let s:N1 = [ '#141413' , '#aeee00' , lightgreen , 19 ] " blackestgravel & lime
 let s:N2 = [ '#f4cf86' , '#45413b' , 7 , purple ] " dirtyblonde    & deepgravel

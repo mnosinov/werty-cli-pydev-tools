@@ -122,3 +122,23 @@ LS_COLORS=$LS_COLORS:'di=0;36:' ; export LS_COLORS
 # disable Software Flow Control XON/XOFF flow control
 # so Ctrl+s doesn't scroll lock
 stty -ixon
+
+# if [ "$TERM" = "linux" ]; then
+#     echo -en "\e]P0232323" #black
+#     echo -en "\e]P82B2B2" #darkgrey
+#     echo -en "\e]PFFFFFFF" #darkred
+#     echo -en "\e]PFFFFFFF" #red
+#     echo -en "\e]P287AF5F" #darkgreen
+#     echo -en "\e]PFFFFFFF" #green
+#     echo -en "\e]PFFFFFFF" #brown
+#     echo -en "\e]PFFFFFFF" #yellow
+#     echo -en "\e]PFFFFFFF" #darkblue
+#     echo -en "\e]PFFFFFFF" #blue
+#     echo -en "\e]PFFFFFFF" #darkmagenta
+#     echo -en "\e]PFFFFFFF" #magenta
+#     echo -en "\e]PFFFFFFF" #darkcyan
+#     echo -en "\e]FFFFFFFF" #cyan
+#     echo -en "\e]PFFFFFFF" #lightgrey
+#     echo -en "\e]PFFFFFFF" #white
+#     clear #for background artifacting
+# fi

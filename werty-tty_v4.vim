@@ -64,15 +64,7 @@ let s:bwc.Blue = ['0000ff', 12]
 let s:bwc.Lime = ['00ff00', 10] 
 let s:bwc.Yellow = ['ffff00', 'Yellow'] 
 let s:bwc.White = ['ffffff', 15]
-if empty($DISPLAY)
-	let s:bwc.Orange = ['008000', 142]
-	let s:bwc.Maroon = ['800000', 124]
-	let s:bwc.DarkGreen = ['008000', 2]
-	let s:bwc.DarkCyan = ['ffff0f', 6]
-	let s:bwc.Silver = ['c0c0c0', 7] 
-	let s:bwc.LightCyan = ['ffff0f', 'LightCyan']
-	hi Type		ctermfg=76      ctermbg=None        cterm=None
-else
+if !empty($DISPLAY) || !empty($SSH_CONNECTION)
 	let s:bwc.Orange = ['008000', 214]
 	let s:bwc.Maroon = ['800000', 196]
 	let s:bwc.DarkGreen = ['008000', 35]
@@ -80,6 +72,14 @@ else
 	let s:bwc.Silver = ['c0c0c0', 252]
 	let s:bwc.LightCyan = ['ffff0f', 51]
 	hi Type		ctermfg=46      ctermbg=None        cterm=None
+else
+	let s:bwc.Orange = ['008000', 142]
+	let s:bwc.Maroon = ['800000', 124]
+	let s:bwc.DarkGreen = ['008000', 2]
+	let s:bwc.DarkCyan = ['ffff0f', 6]
+	let s:bwc.Silver = ['c0c0c0', 7] 
+	let s:bwc.LightCyan = ['ffff0f', 'LightCyan']
+	hi Type		ctermfg=76      ctermbg=None        cterm=None
 endif
 
 " Default Syntax colors tweeks
