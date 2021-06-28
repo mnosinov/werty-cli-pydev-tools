@@ -74,7 +74,7 @@ if empty($DISPLAY)
 	hi Type		ctermfg=76      ctermbg=None        cterm=None
 else
 	let s:bwc.Orange = ['008000', 214]
-	let s:bwc.Maroon = ['800000', 160]
+	let s:bwc.Maroon = ['800000', 196]
 	let s:bwc.DarkGreen = ['008000', 35]
 	let s:bwc.DarkCyan = ['ffff0f', 39]
 	let s:bwc.Silver = ['c0c0c0', 252]

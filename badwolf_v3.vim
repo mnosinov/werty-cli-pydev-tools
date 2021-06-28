@@ -4,7 +4,7 @@ if empty($DISPLAY)
 	let lightgreen = 10
 else
 	let purple = 53
-	let yellow = 191
+	let yellow = 214
 	let lightgreen = 34
 endif
 let s:N1 = [ '#141413' , '#aeee00' , lightgreen , 19 ] " blackestgravel & lime
