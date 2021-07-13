@@ -72,6 +72,9 @@ if !empty($DISPLAY) || !empty($SSH_CONNECTION)
 	let s:bwc.Silver = ['c0c0c0', 252]
 	let s:bwc.LightCyan = ['ffff0f', 51]
 	hi Type		ctermfg=46      ctermbg=None        cterm=None
+	hi DiffChange	ctermfg=None     ctermbg=53         cterm=None
+	hi DiffText	ctermfg=16     ctermbg=11         cterm=None
+	hi DiffDelete	ctermfg=0     ctermbg=3         cterm=None
 else
 	let s:bwc.Orange = ['008000', 142]
 	let s:bwc.Maroon = ['800000', 124]
@@ -80,6 +83,8 @@ else
 	let s:bwc.Silver = ['c0c0c0', 7] 
 	let s:bwc.LightCyan = ['ffff0f', 'LightCyan']
 	hi Type		ctermfg=76      ctermbg=None        cterm=None
+	hi DiffText	ctermfg=16     ctermbg=11         cterm=None
+	hi DiffDelete	ctermfg=0     ctermbg=1         cterm=None
 endif
 
 " Default Syntax colors tweeks
@@ -138,7 +143,6 @@ hi Visual       ctermfg=248     ctermbg=53          cterm=None
 hi VertSplit    ctermfg=239     ctermbg=239         cterm=None
 
 hi DiffDelete  ctermbg=88	cterm=None
-hi DiffText	ctermfg=165     ctermbg=244         cterm=None
 
 " CtrlP plugin primary colors
 call s:HL('CtrlPMatch', 'Lime', '', '', '')
