@@ -142,3 +142,8 @@ stty -ixon
 #     echo -en "\e]PFFFFFFF" #white
 #     clear #for background artifacting
 # fi
+
+# Change first day of week to Monday
+export LC_TIME=en_GB.UTF-8
+# Change to metric system
+export LC_MEASUREMENT=en_GB.UTF-8
