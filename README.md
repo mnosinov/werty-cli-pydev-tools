@@ -15,6 +15,12 @@ sudo apt install konsole
 	- while in tmux: press ```<Prefix> + I``` to install all plugins
 	- tmux resurrect use:   ```save - <Prefix> + Ctrl+s```
 				```restore - <Prefix> + Ctrl+r```
+- install xclip - to copy in tmux ```sudo apt install xclip```. Copy in Tmux:
+1. Enter in tmux-vim mode - <Prefix>+[
+2. Navigate like in vim
+3. To start normal selection press Space. To start line selection press Shift+V. To start vertical selection press Ctrl+v and then Space. To cancel selection press Esc
+4. After selection press Enter to copy to clipboard.
+
 - install mc
 - install zip, unzip
 - install htop
