@@ -95,7 +95,7 @@ sudo apt install konsole
 	```
 - config github - specify global user name and email
 - register my ssh public key in github to push without username
-- install python virtualenv
+- install python virtualenv: ```sudo apt install python3-venv```
 - ```pip3 install pgcli```, but before install postgres ```
 - install mycli
 - install litecli
