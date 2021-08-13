@@ -96,7 +96,7 @@ sudo apt install konsole
 - config github - specify global user name and email
 - register my ssh public key in github to push without username
 - install python virtualenv: ```sudo apt install python3-venv```
-- ```pip3 install pgcli```, but before install postgres ```
+- ```pip3 install pgcli```, but before install postgres. To enable vim mode in pgcli - edit ~/.config/pgcli/config file - change life ```vi = False``` to ```vi = True'''. BTW mode can be changed in pgcli by pressing <F4>
 - install mycli
 - install litecli
 - you can use tty_colors_pallete.sh to print available colors pallete in terminal or tty - for background colors
