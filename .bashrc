@@ -147,3 +147,5 @@ stty -ixon
 export LC_TIME=en_GB.UTF-8
 # Change to metric system
 export LC_MEASUREMENT=en_GB.UTF-8
+# fzf search history ON
+export FZF_DEFAULT_OPTS="--history=$HOME/.fzf_history"
