@@ -1,8 +1,7 @@
-1. in tmux: $tmux source-file ~/.tmux.conf
-2. while in tmux: press <Prefix> + I to install all plugins
-3. in vim run :PluginInstall
-4. in vim run :Files
-
-
-
-
+1. restart machine
+2. in tmux <Ctrl+b> :source-file ~/.tmux.conf
+3. while in tmux: press <Prefix> + I to install all plugins
+4. in vim run :PluginInstall
+5. in vim run :Files
+6. install font "Unifont"
+7. in konsole set theme "White on Black" and Font "Unifont"
