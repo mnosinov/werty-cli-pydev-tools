@@ -1,0 +1,8 @@
+1. in tmux: $tmux source-file ~/.tmux.conf
+2. while in tmux: press <Prefix> + I to install all plugins
+3. in vim run :PluginInstall
+4. in vim run :Files
+
+
+
+
