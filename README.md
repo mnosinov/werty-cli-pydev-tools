@@ -26,6 +26,9 @@ sudo apt install konsole
 - install zip, unzip
 - install htop
 - install tree
+- install ncdu
+- install ranger
+- install neofetch
 - install vim
 - install git
 - copy .vimrc
