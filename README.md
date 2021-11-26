@@ -102,6 +102,7 @@ sudo apt install konsole
 - you can use tty_colors_pallete.sh to print available colors pallete in terminal or tty - for background colors
 - you can use colortest.py to print available colors pallete in terminal or tty - for foreground colors
 - you can use nice font that is modified GNU Unifont (I modified only one letter 't' to look like in tty linux) find this ttf font in werty_gnu_unifont_t_letter_is_modified folder
+- other nice fonts for coding: terminus, pragmata, share-techmono, akkurat-mono, dina, droid sans mono, envy code r, inconsolata, onuava
 
 
 
