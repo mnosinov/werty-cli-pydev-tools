@@ -66,7 +66,7 @@ let s:bwc.Yellow = ['ffff00', 'Yellow']
 let s:bwc.White = ['ffffff', 15]
 if !empty($DISPLAY) || !empty($SSH_CONNECTION)
 	let s:bwc.Orange = ['008000', 214]
-	let s:bwc.Maroon = ['800000', 196]
+	let s:bwc.Maroon = ['ff0000', 196]
 	let s:bwc.DarkGreen = ['008000', 35]
 	let s:bwc.DarkCyan = ['ffff0f', 39]
 	let s:bwc.Silver = ['c0c0c0', 252]
