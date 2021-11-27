@@ -104,9 +104,10 @@ sudo apt install konsole
 - install litecli
 - you can use tty_colors_pallete.sh to print available colors pallete in terminal or tty - for background colors
 - you can use colortest.py to print available colors pallete in terminal or tty - for foreground colors
-- you can use nice font that is modified GNU Unifont (I modified only one letter 't' to look like in tty linux) find this ttf font in werty_gnu_unifont_t_letter_is_modified folder
-- another cool and comportable for long coding work is Terminus font. You can instal it by ```sudo apt install fonts-terminus```
+- cool and comportable for long coding work is Terminus font. You can instal it by ```sudo apt install fonts-terminus```
+- you can use font that is modified GNU Unifont (I modified only one letter 't' to look like in tty linux) find this ttf font in werty_gnu_unifont_t_letter_is_modified folder
+- in case if you have large screen resolution you can use Terminus_werty font. It is modified Terminus font to look like Unifont. It is bitmap font and you need to install it in Ubuntu manually
 - other nice fonts for coding in TTF: terminus, pragmata, share-techmono, akkurat-mono, dina, droid sans mono, envy code r, inconsolata, onuava
-- or you can install bunch of bitmap fonts: https://github.com/Tecate/bitmap-fonts
+- or you can install a bunch of bitmap fonts: https://github.com/Tecate/bitmap-fonts, dina font is also in this pack.
 
 
