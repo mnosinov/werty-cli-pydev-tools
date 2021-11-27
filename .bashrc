@@ -149,3 +149,6 @@ export LC_TIME=en_GB.UTF-8
 export LC_MEASUREMENT=en_GB.UTF-8
 # fzf search history ON
 export FZF_DEFAULT_OPTS="--history=$HOME/.fzf_history"
+# turn off touchpad
+synclient TouchpadOff=1
+stty -ixon
