@@ -22,7 +22,7 @@ sudo apt install konsole
 		3. To start normal selection press Space. To start line selection press Shift+V. To start vertical selection press Ctrl+v and then Space. To cancel selection press Esc
 		4. After selection press Enter to copy to clipboard.
 
-- install mc
+- install mc. julia256 is excellent appearance skin
 - install zip, unzip
 - install htop
 - install tree
