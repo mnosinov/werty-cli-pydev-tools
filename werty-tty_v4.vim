@@ -146,7 +146,7 @@ hi DiffDelete  ctermbg=88	cterm=None
 
 " CtrlP plugin primary colors
 call s:HL('CtrlPMatch', 'Lime', '', '', '')
-call s:HL('CtrlPPrtBase', 'Silver', 'Blue', '', '')
+call s:HL('CtrlPPrtBase', 'Silver', '', '', '')
 call s:HL('CtrlPLinePre', 'Silver', '', '', '')
 call s:HL('CtrlPPrtText', 'Silver', 'Red', '', '')
 call s:HL('CtrlPPrtText', 'Silver', 'Gray', '', '')
@@ -173,7 +173,7 @@ call s:HL('PmenuSbar', 'Blue', '', '', '')
 call s:HL('PmenuThumb', 'Red', '', '', '')
 
 " Terminal color - windows after ":term" command
-call s:HL('Terminal', '', 'Blue', '', '')
+call s:HL('Terminal', '', 'Black', '', '')
 
 " Some Python syntax tweeks
 call s:HL('pythonDecorator', 'LightCyan', '', '', '')
