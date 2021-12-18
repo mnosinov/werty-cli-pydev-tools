@@ -1,14 +1,20 @@
 set nocompatible         " required for Vundle
 set hidden
+set incsearch
+set smartcase
+set noerrorbells
+set scrolloff=7
+set nowrap
 filetype off              " required for Vundle, but at the end in turned on
 
 " 80 letters line delimiter background color
-hi ColorColumn  ctermfg=None	ctermbg=9	cterm=underline
+hi ColorColumn  ctermfg=None	ctermbg=236	cterm=None
 " draw 80 letters delimiter - like one vertical bar
-"let &colorcolumn="81"
+let &colorcolumn="81"
 " draw 80 letters delimiter - all letters that a more than 80 - are colored
 "let &colorcolumn="80,".join(range(81,999),",")
-call matchadd('ColorColumn', '\%82v', 100)
+
+"call matchadd('ColorColumn', '\%82v', 100)
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -78,7 +84,7 @@ let g:SimpylFold_docstring_preview=1
 " color schema customization
 set t_Co=256
 set background=dark
-"colorscheme werty-tty
+colorscheme werty-tty
 
 let python_highlight_all=1
 syntax on
@@ -178,7 +184,23 @@ set rnu
 "  \   'ag --column --numbers --noheading --color --smart-case '.shellescape(<q-args>), 1,
 "  \   fzf#vim#with_preview(), <bang>0)
 nnoremap <C-g> :Rg<CR>
-"nnoremap <C-g> :Ag <C-R><C-W><CR>
+"nnoremap <C-h> :Ag <C-R><C-W><CR>
+" Customize fzf colors to match your color scheme                                          
+   " - fzf#wrap translates this to a set of `--color` options                                 
+   let g:fzf_colors =                                                                         
+   \ { 'fg':      ['fg', 'Normal'],                                                           
+     \ 'bg':      ['bg', 'Normal'],                                                           
+     \ 'hl':      ['fg', 'Directory'],                                                          
+     \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],                             
+     \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],                                       
+     \ 'hl+':     ['fg', 'Statement'],                                                        
+     \ 'info':    ['fg', 'PreProc'],                                                          
+     \ 'border':  ['fg', 'Directory'],                                                           
+     \ 'prompt':  ['fg', 'Conditional'],                                                      
+     \ 'pointer': ['fg', 'Exception'],                                                        
+     \ 'marker':  ['fg', 'Keyword'],                                                          
+     \ 'spinner': ['fg', 'Label'],                                                            
+     \ 'header':  ['fg', 'Comment'] } 
 
 let g:airline_theme='badwolf'
 "let g:airline_theme='molokai'
