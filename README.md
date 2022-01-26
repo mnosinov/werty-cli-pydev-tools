@@ -110,4 +110,8 @@ sudo apt install konsole
 - other nice fonts for coding in TTF: terminus, pragmata, share-techmono, akkurat-mono, dina, droid sans mono, envy code r, inconsolata, onuava
 - or you can install a bunch of bitmap fonts: https://github.com/Tecate/bitmap-fonts, dina font is also in this pack.
 
+- install command line web browser - lynx (usage: lynx google.com):
+```sh
+sudo apt install lynx
+```
 
