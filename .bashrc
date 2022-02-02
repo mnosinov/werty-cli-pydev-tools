@@ -159,4 +159,4 @@ stty -ixon
 # in my case output was:
 # DP-3 connected 1920x1080+0+0 (normal left inverted right x axis y axis) 344mm x 193mm
 # so my display is identified as DP-3. Use it in command below
-xrandr --output DP-3 --brightness 0.8
+# xrandr --output DP-3 --brightness 0.8
