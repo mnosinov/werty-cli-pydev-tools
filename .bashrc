@@ -153,3 +153,5 @@ export FZF_DEFAULT_OPTS="--history=$HOME/.fzf_history"
 # turn off touchpad
 synclient TouchpadOff=1
 stty -ixon
+# set display brightness to comfort level - 80% (0.8). To apply 100% use (1)
+xrandr --output DP-3 --brightness 0.8
