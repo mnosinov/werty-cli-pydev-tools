@@ -57,9 +57,9 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;93m\]\w\[\033[00m\]\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;93m\]\w\[\033[00m\]\n\$ '
 else
-    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\n\$ '
 fi
 unset color_prompt force_color_prompt
 
@@ -71,6 +71,8 @@ xterm*|rxvt*)
 *)
     ;;
 esac
+
+# display a new line on the prompt
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
@@ -121,7 +123,6 @@ LS_COLORS=$LS_COLORS:'di=0;36:' ; export LS_COLORS
 
 # disable Software Flow Control XON/XOFF flow control
 # so Ctrl+s doesn't scroll lock
-stty -ixon
 
 # if [ "$TERM" = "linux" ]; then
 #     echo -en "\e]P0232323" #black
