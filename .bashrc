@@ -153,5 +153,10 @@ export FZF_DEFAULT_OPTS="--history=$HOME/.fzf_history"
 # turn off touchpad
 synclient TouchpadOff=1
 stty -ixon
+
 # set display brightness to comfort level - 80% (0.8). To apply 100% use (1)
+# run command to identify your display: xrandr -q | grep " connected"
+# in my case output was:
+# DP-3 connected 1920x1080+0+0 (normal left inverted right x axis y axis) 344mm x 193mm
+# so my display is identified as DP-3. Use it in command below
 xrandr --output DP-3 --brightness 0.8
