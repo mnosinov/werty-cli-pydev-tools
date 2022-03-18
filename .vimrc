@@ -1,11 +1,18 @@
 set nocompatible         " required for Vundle
 set hidden
+set incsearch
+set smartcase
+set noerrorbells
+set scrolloff=7
+set nowrap
+" set option to use local nested .vimrc in directory tree
+set exrc
 filetype off              " required for Vundle, but at the end in turned on
 
 " 80 letters line delimiter background color
-hi ColorColumn  ctermfg=None	ctermbg=9	cterm=underline
+hi ColorColumn  ctermfg=None	ctermbg=236	cterm=None
 " draw 80 letters delimiter - like one vertical bar
-"let &colorcolumn="81"
+let &colorcolumn="81"
 " draw 80 letters delimiter - all letters that a more than 80 - are colored
 "let &colorcolumn="80,".join(range(81,999),",")
 
@@ -48,8 +55,9 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-" enable mouse in vim
-set mouse=a
+" enable mouse in vim in modes: visual, inser, command-line, if all then nvic
+" or a
+set mouse=vic
 " cursor settings: block in normal, bar in insert and underscore in replace
 let &t_EI = "\<Esc>[1 q"
 let &t_SR = "\<Esc>[3 q"
@@ -107,6 +115,7 @@ set encoding=utf-8
 " YouCompleteMe
 let g:ycm_autoclose_preview_window_after_completion=1
 let g:ycm_add_preview_to_completeopt=1
+let g:ycm_auto_hover=''		" disable popup documentation window on cursor hover
 set completeopt-=preview
 "set completeopt=longest,menuone
 map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
