@@ -61,6 +61,7 @@ let s:bwc.Purple = ['ff00ff', 13]
 let s:bwc.Black = ['000000', 0] 
 let s:bwc.Gray = ['808080', 243]
 let s:bwc.Blue = ['0000ff', 12] 
+let s:bwc.DarkBlue = ['0000b3', 18] 
 let s:bwc.Lime = ['00ff00', 10] 
 let s:bwc.Yellow = ['ffff00', 'Yellow'] 
 let s:bwc.White = ['ffffff', 15]
@@ -91,7 +92,7 @@ endif
 call s:HL('Normal', 'Silver', '', 'None', '')
 call s:HL('Comment', 'Gray', '', 'None', '')
 call s:HL('Cursor', '', '', 'inverse', '')
-call s:HL('CursorLine', 'White', 'Blue', '', '')
+call s:HL('CursorLine', 'White', 'DarkBlue', '', '')
 call s:HL('SpecialKey', 'Purple', '', '', '')
 call s:HL('Identifier', 'Orange', '', '', '')
 call s:HL('Directory', 'Orange', '', '', '')
