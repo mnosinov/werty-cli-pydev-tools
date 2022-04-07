@@ -114,4 +114,11 @@ sudo apt install konsole
 ```sh
 sudo apt install lynx
 ```
-
+- install tool to monitor network activity - speedometer:
+```
+apt install speedometer
+```
+usage example:
+```
+speedometer -r eth0 -t eth0
+```
