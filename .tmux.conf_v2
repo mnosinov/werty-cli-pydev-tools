@@ -1,0 +1,38 @@
+set -g status off
+set -sg repeat-time 0
+set -g status-bg green
+set -g status-fg white
+set -g default-terminal "xterm-256color"
+set -g default-shell /bin/zsh
+# set -g default-shell /usr/bin/zsh
+# set -g default-shell /usr/bin/bash
+# vi like in copy-mode, in status line and switching between panes
+setw -g mode-keys vi
+set -g status-keys vi
+set -g mode-keys vi
+bind h select-pane -L
+bind j select-pane -D
+bind k select-pane -U
+bind l select-pane -R
+
+#for copying to sys clipboard - need to install xclip - (sudo apt install xclip)
+bind -T copy-mode-vi Enter send-keys -X copy-pipe-and-cancel "xclip -i -f -selection primary | xclip -i -selection clipboard"
+bind -T copy-mode-vi MouseDragEnd1Pane send-keys -X copy-pipe-and-cancel "xclip -i -f -selection primary | xclip -i -selection clipboard"
+bind -T copy-mode-vi C-j send-keys -X copy-pipe-and-cancel "xclip -i -f -selection primary | xclip -i -selection clipboard"
+
+# turn mouse off
+set -g mouse off
+
+# resize to max in fullscreen mode
+set-window-option -g aggressive-resize on
+
+# List of plugins
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-sensible'
+set -g @plugin 'tmux-plugins/tmux-resurrect'
+
+set -g @resurrect-strategy-vim 'session'
+set -g @resurrect-strategy-nvim 'session'
+
+# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
+run '~/.tmux/plugins/tpm/tpm'
