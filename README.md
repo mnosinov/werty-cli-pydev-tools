@@ -25,6 +25,7 @@ sudo apt install konsole
 - install mc. julia256 is excellent appearance skin
 - install zip, unzip
 - install htop
+- install btop (more info in comparison to htop)
 - install tree
 - install ncdu
 - install ranger
