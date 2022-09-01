@@ -40,6 +40,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'mattn/emmet-vim'
 Plugin 'Yggdroot/indentLine'
+Plugin 'pangloss/vim-javascript'
 "Plugin 'morhetz/gruvbox'
 
 " All of your Plugins must be added before the following line------------
@@ -188,6 +189,7 @@ set rnu
 "  \   'ag --column --numbers --noheading --color --smart-case '.shellescape(<q-args>), 1,
 "  \   fzf#vim#with_preview(), <bang>0)
 nnoremap <C-g> :Rg<CR>
+nnoremap <C-h> :Ag<CR>
 "nnoremap <C-h> :Ag <C-R><C-W><CR>
 " Customize fzf colors to match your color scheme                                          
    " - fzf#wrap translates this to a set of `--color` options                                 
