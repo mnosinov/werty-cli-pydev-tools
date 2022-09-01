@@ -26,7 +26,9 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'nvie/vim-flake8'
-Plugin 'preservim/nerdtree'
+" Plugin 'preservim/nerdtree'
+Plugin 'scrooloose/nerdtree'                                  " side bar with file tree view
+Plugin 'Xuyuanp/nerdtree-git-plugin'                          " show git status in file tree view
 Plugin 'majutsushi/tagbar'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'Valloric/YouCompleteMe'
@@ -41,7 +43,14 @@ Plugin 'tmhedberg/SimpylFold'
 Plugin 'mattn/emmet-vim'
 Plugin 'Yggdroot/indentLine'
 Plugin 'pangloss/vim-javascript'
+Plugin 'othree/html5.vim'
+Plugin 'herringtondarkholme/yats.vim'                         " Typescript syntax
+Plugin 'maxmellon/vim-jsx-pretty'                             " JSX syntax
+Plugin 'prettier/vim-prettier'                                " Prettier - automatically format file according to rules/editorconfig
+Plugin 'othree/xml.vim'                                       " to work with HTML/XML tags, see https://www.vim.org/scripts/script.php?script_id=1397
+Plugin 'cakebaker/scss-syntax.vim'                            " SCSS syntax
 "Plugin 'morhetz/gruvbox'
+
 
 " All of your Plugins must be added before the following line------------
 call vundle#end()            " required
