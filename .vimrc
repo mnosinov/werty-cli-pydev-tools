@@ -166,7 +166,7 @@ nnoremap <F3> :CtrlPBuffer<CR>
 inoremap <F3> <Esc> :CtrlPBuffer<CR>
 nnoremap <F2> :CtrlPMRU<CR>
 inoremap <F2> <Esc> :CtrlPMRU<CR>
-set wildignore+=*/__pycache__/*,*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store,*/vendor,tags
+set wildignore+=*/__pycache__/*,*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store,*/vendor,tags,Session.vim
 
 
 " temporary command - just to create color scheme
