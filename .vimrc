@@ -26,9 +26,9 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'nvie/vim-flake8'
-" Plugin 'preservim/nerdtree'
-Plugin 'scrooloose/nerdtree'                                  " side bar with file tree view
-Plugin 'Xuyuanp/nerdtree-git-plugin'                          " show git status in file tree view
+Plugin 'preservim/nerdtree'
+" Plugin 'scrooloose/nerdtree'                                  " side bar with file tree view
+" Plugin 'Xuyuanp/nerdtree-git-plugin'                          " show git status in file tree view
 Plugin 'majutsushi/tagbar'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'Valloric/YouCompleteMe'
@@ -156,7 +156,7 @@ let g:syntastic_python_checkers=['flake8']
 let g:syntastic_python_flake8_args='--ignore=E126,E127,E131,E501,E225,W504'
 
 " NERDTree plugin customization - use CtrlP instead this plugin.
-let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
+let NERDTreeIgnore=['\.pyc$', '\~$', '^__pycache__$', 'Session.vim', 'tags'] "ignore files in NERDTree
 nnoremap <F12> :NERDTreeToggle<CR>
 inoremap <F12> <Esc> :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen = 1
