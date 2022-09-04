@@ -145,7 +145,7 @@ LS_COLORS=$LS_COLORS:'di=0;36:' ; export LS_COLORS
 # fi
 
 # Change first day of week to Monday
-export LC_TIME=en_GB.UTF-8
+# export LC_TIME=en_GB.UTF-8	# commented for installation on servers
 # Change to metric system
 export LC_MEASUREMENT=en_GB.UTF-8
 # fzf search history ON
