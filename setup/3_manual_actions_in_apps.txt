@@ -3,9 +3,11 @@
 3. While in tmux: press <Prefix> + I to install all plugins
 4. In vim run :PluginInstall
 5. In vim run :Files
-6. Install font "Unifont"
-7. In konsole set theme "White on Black" and Font "Unifont"
-8. In mc set julia256 appearance skin
+6. In mc set julia256 appearance skin
+
+-- options for Ubuntu Desktop, not necessary for installation on server
+7. Install font "Unifont"
+8. In konsole set theme "White on Black" and Font "Unifont"
 
 -- optional actions ---------------------------------------------------------
 9. You can try .bashrc_v2 and set your own prompt format up
