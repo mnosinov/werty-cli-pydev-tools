@@ -11,5 +11,5 @@ set show-mode-in-prompt on
 # set vi-cmd-mode-string \033[;32m\└──\1\e[34;1m\2[cmd]
 # set vi-ins-mode-string \033[;32m\└──[ins]
 
-set vi-ins-mode-string \1\e[5 q\e]12;green\a\2
-set vi-cmd-mode-string \1\e[1 q\e]12;orange\a\2
+set vi-ins-mode-string \1\e[6 q\e]12;green\a\2
+set vi-cmd-mode-string \1\e[2 q\e]12;orange\a\2
