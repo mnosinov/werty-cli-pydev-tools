@@ -1,7 +1,12 @@
-1. restart machine
-2. in tmux <Ctrl+b> :source-file ~/.tmux.conf
-3. while in tmux: press <Prefix> + I to install all plugins
-4. in vim run :PluginInstall
-5. in vim run :Files
-6. install font "Unifont"
-7. in konsole set theme "White on Black" and Font "Unifont"
+1. Restart machine
+2. In tmux <Ctrl+b> :source-file ~/.tmux.conf
+3. While in tmux: press <Prefix> + I to install all plugins
+4. In vim run :PluginInstall
+5. In vim run :Files
+6. Install font "Unifont"
+7. In konsole set theme "White on Black" and Font "Unifont"
+8. In mc set julia256 appearance skin
+
+-- optional actions ---------------------------------------------------------
+9. You can try .bashrc_v2 and set your own prompt format up
+10. Set zsh if you prefer it. Replace bash with zsh in .tmux.conf. And use config for zsh from zsh_confs folder
