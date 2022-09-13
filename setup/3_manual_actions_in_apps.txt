@@ -7,8 +7,16 @@
 
 -- options for Ubuntu Desktop, not necessary for installation on server
 7. Install font "Unifont"
+6. install optionals programs - 5_addons_for_gui.sh
 8. In konsole set theme "White on Black" and Font "Unifont"
 
+
 -- optional actions ---------------------------------------------------------
-9. You can try .bashrc_v2 and set your own prompt format up
-10. Set zsh if you prefer it. Replace bash with zsh in .tmux.conf. And use config for zsh from zsh_confs folder
+10. You can try .bashrc_v2 and set your own prompt format up
+11. Set zsh if you prefer it. Replace bash with zsh in .tmux.conf. And use config for zsh from zsh_confs folder
+
+-- git related configuration ---------------------------------------------------------
+12. generate rsa keys for ssh: ssh-keygen
+13. set git user and email configuration:
+	git config --global user.email "you@example.com"
+	git config --global user.name "your name"
