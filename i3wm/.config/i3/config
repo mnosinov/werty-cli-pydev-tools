@@ -215,6 +215,8 @@ bar {
         statusline #cacaca
         separator #777777
 
+
+	#		   border  bgrnd   text
         focused_workspace  #4c7899 #285577 #ffffff
         active_workspace   #333333 #5f676a #ffffff
         inactive_workspace #333333 #222222 #888888
@@ -222,6 +224,12 @@ bar {
     }
     status_command i3status
 }
+
+# windows colorization
+# class                 border  backgr. text    indicator child_border
+client.focused_inactive #0d1010 #212121 #d9d9d9 #0d1010 #063340
+client.unfocused        #0d1010 #212121 #d9d9d9 #424242 #063340
+client.focused          #d9d9d9 #cecece #000000 #d9d9d9 #09fe04
 
 # For screenshots install :
 # apt install maim xclip copyq
@@ -237,5 +245,5 @@ bindsym Ctrl+Shift+Print exec --no-startup-id maim --format=png --select | xclip
 
 # active windows border width
 # for_window [tiling] border pixel 3
-for_window [tiling] border pixel 2
+for_window [tiling] border pixel 1
 
