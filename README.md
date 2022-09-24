@@ -112,6 +112,7 @@ sudo apt install konsole
 - cool and comportable for long coding work is Terminus font. You can instal it by `sudo apt install fonts-terminus`
 - you can use font that is modified GNU Unifont (I modified only one letter 't' to look like in tty linux) find this ttf font in werty_gnu_unifont_t_letter_is_modified folder
 - in case if you have large screen resolution you can use Terminus_werty font. It is modified Terminus font to look like Unifont. It is bitmap font and you need to install it in Ubuntu manually
+- gohufont is compact and good for coding font - folow installation manual: http://keilhau.org/customizing-linux.html 
 - other nice fonts for coding in TTF: terminus, pragmata, share-techmono, akkurat-mono, dina, droid sans mono, envy code r, inconsolata, onuava
 - or you can install a bunch of bitmap fonts: https://github.com/Tecate/bitmap-fonts, dina font is also in this pack.
 
@@ -132,3 +133,4 @@ usage example:
 ```
 speedometer -r eth0 -t eth0
 ```
+- install i3 windows manager - here is a good installation manual in Russian - https://laurvas.ru/i3/#installation . copy necessary files from i3wm/.config/* to ~/.config/ folder

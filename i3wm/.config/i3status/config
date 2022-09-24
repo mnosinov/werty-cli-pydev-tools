@@ -1,0 +1,73 @@
+# i3status configuration file.
+# see "man i3status" for documentation.
+
+# It is important that this file is edited as UTF-8.
+# The following line should contain a sharp s:
+# ß
+# If the above line is not correctly displayed, fix your editor first!
+
+general {
+  colors = true
+  color_good = "#a3be8c"
+  color_degraded = "#ebcb8b"
+  color_bad = "#bf616a"
+  interval = 5
+  separator = "|"
+  color_separator = "#bf616a"
+}
+
+# order += "ipv6"
+# order += "ethernet _first_"
+order += "battery all"
+order += "disk /"
+# order += "load"
+order += "cpu_usage"
+order += "memory"
+order += "wireless _first_"
+order += "volume master"
+order += "tztime local"
+
+wireless _first_ {
+        # format_up = "W: (%quality at %essid) %ip"
+        format_up = "Wi-Fi: (%quality at %essid)"
+        format_down = "Wi-Fi: down"
+}
+
+ethernet _first_ {
+        format_up = "E: %ip (%speed)"
+        format_down = "E: down"
+}
+
+battery all {
+        format = "Battery: %status %percentage %remaining"
+}
+
+disk "/" {
+        format = "Disk: %avail"
+}
+
+load {
+        format = "%5min"	# number of processes waiting for CPU time in the last 1, 5 and 15 minutes
+}
+
+cpu_usage {
+  format = "Cpu: %usage"
+}
+
+memory {
+        # format = "Memory: used %used available %available"
+        format = "Memory used: %used"
+        threshold_degraded = "1G"
+        format_degraded = "MEMORY < %available"
+}
+
+tztime local {
+        format = "%Y-%m-%d %H:%M:%S"
+}
+
+volume master {
+    device = "default"
+    mixer_idx = "0"
+    mixer = "Master"
+    format = "♪: %volume"
+}
