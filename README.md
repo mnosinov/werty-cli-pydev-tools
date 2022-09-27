@@ -14,7 +14,7 @@ sudo apt install konsole
 		```sh
 		git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 		```
-	- source .tmux.conf: while being in tmux `$ tmux source-file ~/.tmux.conf` 
+	- source .tmux.conf: while being in tmux ```sh $ tmux source-file ~/.tmux.conf```
 	- install all tmux plugins: while being in tmux press `<Prefix> + I`
 	- tmux-resurrect - plugin to save tmux workspaces. tmux.conf already includes tmux-resurrect.  
 		tmux resurrect usage:  
