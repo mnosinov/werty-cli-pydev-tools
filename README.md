@@ -14,22 +14,35 @@ sudo apt install konsole
 		```sh
 		git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 		```
-	- source .tmux.conf: while being in tmux ```sh $ tmux source-file ~/.tmux.conf```
+	- source .tmux.conf: while being in tmux 
+		```sh
+		 $ tmux source-file ~/.tmux.conf
+		```
 	- install all tmux plugins: while being in tmux press `<Prefix> + I`
 	- tmux-resurrect - plugin to save tmux workspaces. tmux.conf already includes tmux-resurrect.  
-		tmux resurrect usage:  
-		- to save tmux workspaces:  `<Prefix>` and then `Ctrl+s`
-		- to restore them back: `<Prefix>` and then `Ctrl+r`
+		- tmux resurrect usage:  
+			- to save tmux workspaces:  `<Prefix>` and then `Ctrl+s`
+			- to restore them back: `<Prefix>` and then `Ctrl+r`
 
-	- to copy in tmux use xclip: `sudo apt install xclip`
+	- to copy in tmux use xclip: 
+		```sh
+		sudo apt install xclip
+		```
 		- Copy in tmux:  
-		  1. Turn on tmux-vim mode - `<Prefix> + [`    
-		  2. Navigate in tmux windows like in vim.   
-		  3. To start normal selection press `Space`. To start line selection press `Shift+v`. To start vertical selection press `Ctrl+v` and then Space. To cancel selection press Esc.  
-		  4. After selection press Enter to copy to the clipboard. 
+		  1. Turn on tmux-vim mode - `<Prefix> + [`
+		  1. Navigate in tmux windows like in vim.
+		  1. To start normal selection press `Space`. To start line selection press `Shift+v`. To start vertical selection press `Ctrl+v` and then Space. To cancel selection press Esc.
+		  1. After selection press Enter to copy to the clipboard.
 
-- install mc - two panels file manager. `sudo apt install mc`. julia256 is more clear appearance skin
-- install zip, unzip - to work with zip archives. `sudo apt install zip unzip`
+- install mc - two panels file manager.
+	```sh
+	 sudo apt install mc
+	```
+	julia256 is more clear appearance skin
+- install zip, unzip - to work with zip archives. 
+	```sh
+	sudo apt install zip unzip
+	```
 - install htop and btop - processes and resources monitoring tools. `sudo apt install htop btop`. btop has more info in comparison to htop
 - install tree. `sudo apt install htop tree` 
 - install ncdu. CLI utility to show sizes of the files in the current directory. `sudo apt install ncdu`. It is a one command replacement of `du -sh * | sort -h`. You can use either of them.
