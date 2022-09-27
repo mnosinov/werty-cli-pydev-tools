@@ -143,7 +143,7 @@ sudo apt install konsole
      - `<F10>` next buffer
      - `<F11>` last used buffer
      - `<F12>` NERDTree toggle (use o (opens in buffer) or t (opens in tab) to open files, not Enter, see help)
-- check colors in normal, insert, visual modes and in all plugins:
+- check colors in vim normal, insert, visual modes and in all plugins:
      - CtrlP
      - tagbar
      - NERDTree
@@ -151,7 +151,7 @@ sudo apt install konsole
 	```sh
 	sudo npm install -g prettier
 	```
-	  - you can make source files (marked with //@format at the top), prettier by command `:Prettier`
+	- you can make source files (marked with //@format at the top), prettier by command `:Prettier`
 
 ## Additional color customization if necessary
 - adjust next colors in werty-tty.vim see TODO blocks in werty-tty.vim file:
@@ -159,13 +159,13 @@ sudo apt install konsole
      - Maroon
      - DarkCyan
      - DarkGreen
-- you can use tty_colors_pallete.sh to print available colors pallete in terminal or tty - for background colors
-- you can use colortest.py to print available colors pallete in terminal or tty - for foreground colors
+- you can use `tty_colors_pallete.sh` to print available colors pallete in terminal or tty - for background colors.
+- you can use `colortest.py` to print available colors pallete in terminal or tty - for foreground colors.
 
-##Git settings
+## Git settings
 - generate ssh keys to connect to remote ssh hosts
      ```
-     	ssh-keygen
+	ssh-keygen
      ```
 - set configuration for git - specify global user name and email
      ```
@@ -173,51 +173,72 @@ sudo apt install konsole
 	git config --global user.email "your_email@mail.com"
      ```
 
-##VirtualEnv, CLIs for databases
-- python virtualenv: `sudo apt install python3-venv virtualenv`. In some cases virualenv is more suitable then venv
-- pgcli - CLI utility to work with PostgreSQL databases `sudo apt install pgcli` (should be installed after, installation of postgres. To enable vim mode in pgcli - edit ~/.config/pgcli/config file - change life `vi = False` to `vi = True`. BTW mode can be changed in pgcli by pressing `<F4>`
-- CLI utils for MySQL or SQLite: mycli, litecli
-
-##ZSH
-- Try zsh instead of bash. It is more advanced. There is addon to zsh called OhMyZsh (https://ohmyz.sh). You can customize you prompt the way you wish. 
-	you can find some .zshrc configuration files in zsh_confs folder
-
-
-##Additional utilities
-- command line web browser - lynx (usage: lynx google.com):
+## VirtualEnv, CLIs for databases
+- python virtualenv: 
+	```sh
+	sudo apt install python3-venv virtualenv
 	```
+	- In some cases virualenv is more suitable then venv
+
+- pgcli - CLI utility to work with PostgreSQL databases. Should be installed after, installation of postgres. 
+	```sh
+	sudo apt install pgcli
+	```
+	- to enable vim mode in pgcli - edit ~/.config/pgcli/config file - change in life `vi = False` to `vi = True`. BTW mode can be changed in pgcli by pressing `<F4>`
+- CLI utils for MySQL or SQLite: `mycli`, `litecli`
+
+## ZSH
+- Try zsh instead of bash. It is more advanced. There is addon to zsh called OhMyZsh (https://ohmyz.sh). You can customize you prompt the way you wish. 
+	You can find some .zshrc configuration files in zsh_confs folder
+
+
+## Additional utilities
+- command line web browser - lynx:
+	```sh
 	sudo apt install lynx
+	```
+	Usage example:
+
+	```sh
+	lynx google.com
 	```
 
 - monitoring network activity - speedometer:
 
-	```
+	```sh
 	sudo apt install speedometer
 	```
 
 	Usage example:
 
-	```
+	```sh
 	speedometer -r eth0 -t eth0
 	```
 - CLI colorized calendar:
 	 ```
 	sudo apt install ccal
 	```
-	 - Usage example: `ccal 2022`
+	Usage example:
 
-##Fonts for coding
-- cool and comportable for long coding work is `Terminus` font. You can instal it by `sudo apt install fonts-terminus`
+	```sh
+	ccal 2022
+	```
+
+## Fonts for coding
+- cool and comportable for long coding work is `Terminus` font. You can instal it by command
+	 ```sh
+	sudo apt install fonts-terminus
+	```
 - you can use a font that is modified `GNU Unifont` (Only one letter has been modified - letter 't' to look like in Linux tty). You can find this TTF font in `favourite_fonts/werty_gnu_unifont_t_letter_is_modified` folder
-- in case if you have large screen resolution you can use Terminus_werty font. It is modified Terminus font to look like Unifont. It is bitmap font and you need to install it in Ubuntu manually
+- in case if you have large screen resolution you can use `Terminus_werty` font. It is modified Terminus font to look like Unifont. It is bitmap font and you need to install it in Ubuntu manually
 - `gohufont` is a compact and good for coding font - folow the installation manual: http://keilhau.org/customizing-linux.html 
 - other nice fonts for coding in TTF: `Terminus_TTF, pragmata, share-techmono, akkurat-mono, dina, droid sans mono, envy code r, inconsolata, onuava`
 - or you can install a bunch of bitmap fonts: https://github.com/Tecate/bitmap-fonts, dina font is also in this pack.
 
-##i3 window manager
+## i3 window manager
 - great tiling manager - very effective for keyboard oriented utilization. Here is a good installation manual in Russian - https://laurvas.ru/i3/#installation .
-- you can find more detailed information about shortcuts of i3 in `i3wm\README.md`. You can find necessary configuration files in `home_dir` folder as well.
+- you can find more detailed information about shortcuts of i3 in `i3wm/README.md`. You can find necessary configuration files in `home_dir` folder as well.
 
-##Too long. Didn't read. :)
+## Too long. Didn't read.
 Almost all this setup can be installed by installation scripts in `setup` folder.
 
