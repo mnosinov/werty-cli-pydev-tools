@@ -1,6 +1,6 @@
 # cli developer environment:
 
-For non tty modes - use terminal app - "Konsole" with some font and keyboard shortcuts (full screen mode) customization, theme "White on Black".
+For non tty modes - use terminal app - "Konsole" with some font and keyboard shortcuts (full screen mode change from `F11` to `Shift+F11`) customization, theme "White on Black".
 
 ```
 sudo apt update
@@ -8,20 +8,25 @@ sudo apt install konsole
 ```
 
 - copy .inputrc, .bashrc, .tmux.conf to ~. Use appropriate version of the files
-- install tmux - use tmux in terminal from the start.
-- set up tmux (Default <Prefix> is Ctrl+B):  
+- tmux - terminal multiplexer. Use tmux in terminal from the start.
+- set up tmux (Default `<Prefix>` is `Ctrl+B`):  
 	- install tmux plugin manager:   
-		`git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
+		```sh
+		git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+		```
 	- source .tmux.conf: while being in tmux `$ tmux source-file ~/.tmux.conf` 
-	- install all tmux plugins: while being in tmux: press `<Prefix> + I`
-	- .tmux.conf already includes tmux-resurrect. tmux resurrect usage: to save tmux workspaces `<Prefix> and then Ctrl+s` and to restore them `<Prefix> and then Ctrl+r`
+	- install all tmux plugins: while being in tmux press `<Prefix> + I`
+	- tmux-resurrect - plugin to save tmux workspaces. tmux.conf already includes tmux-resurrect.  
+		tmux resurrect usage:  
+		- to save tmux workspaces:  `<Prefix>` and then `Ctrl+s`
+		- to restore them back: `<Prefix>` and then `Ctrl+r`
 
-- to copy in tmux use xclip: `sudo apt install xclip`
-	- Copy in tmux:
-          1. Turn on tmux-vim mode - `<Prefix> + [`
-          2. Navigate in tmux windows like in vim
-          3. To start normal selection press `Space`. To start line selection press `Shift+v`. To start vertical selection press `Ctrl+v` and then Space. To cancel selection press Esc
-          4. After selection press Enter to copy to the clipboard.
+	- to copy in tmux use xclip: `sudo apt install xclip`
+		- Copy in tmux:  
+		  1. Turn on tmux-vim mode - `<Prefix> + [`    
+		  2. Navigate in tmux windows like in vim.   
+		  3. To start normal selection press `Space`. To start line selection press `Shift+v`. To start vertical selection press `Ctrl+v` and then Space. To cancel selection press Esc.  
+		  4. After selection press Enter to copy to the clipboard. 
 
 - install mc - two panels file manager. `sudo apt install mc`. julia256 is more clear appearance skin
 - install zip, unzip - to work with zip archives. `sudo apt install zip unzip`
