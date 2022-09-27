@@ -3,10 +3,9 @@ set -sg repeat-time 0
 set -g status-bg green
 set -g status-fg white
 set -g default-terminal "xterm-256color"
-
-# set -g default-shell /usr/bin/bash
 set -g default-shell /bin/zsh
-
+# set -g default-shell /usr/bin/zsh
+# set -g default-shell /usr/bin/bash
 # vi like in copy-mode, in status line and switching between panes
 setw -g mode-keys vi
 set -g status-keys vi

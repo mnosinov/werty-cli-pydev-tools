@@ -1,0 +1,8 @@
+i3-msg 'rename workspace 1 to "1-FRNT"'
+i3-msg 'rename workspace 2 to "2-ENG"'
+i3-msg 'rename workspace 3 to "3-PR1"'
+i3-msg 'rename workspace 4 to "4-PR2"'
+i3-msg 'rename workspace 5 to "5-PR3"'
+i3-msg 'rename workspace 6 to "6-GAJ"'
+i3-msg 'rename workspace 7 to "7-GA"'
+i3-msg 'rename workspace 8 to "8-DIFF"'

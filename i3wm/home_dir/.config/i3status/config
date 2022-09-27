@@ -18,32 +18,32 @@ general {
 
 # order += "ipv6"
 # order += "ethernet _first_"
-order += "battery all"
-order += "disk /"
-# order += "load"
 order += "cpu_usage"
+# order += "load"
 order += "memory"
+order += "disk /"
 order += "wireless _first_"
+order += "battery all"
 order += "volume master"
 order += "tztime local"
 
 wireless _first_ {
         # format_up = "W: (%quality at %essid) %ip"
-        format_up = "Wi-Fi: (%quality at %essid)"
-        format_down = "Wi-Fi: down"
+        format_up = " WiFi: %essid %quality "
+        format_down = " WiFi: down "
 }
 
 ethernet _first_ {
-        format_up = "E: %ip (%speed)"
-        format_down = "E: down"
+        format_up = " E: %ip (%speed) "
+        format_down = " E: down "
 }
 
 battery all {
-        format = "Battery: %status %percentage %remaining"
+        format = " Battery: %remaining %percentage %status "
 }
 
 disk "/" {
-        format = "Disk: %avail"
+        format = " HDD available: %avail "
 }
 
 load {
@@ -51,23 +51,24 @@ load {
 }
 
 cpu_usage {
-  format = "Cpu: %usage"
+  format = " CPU load: %usage "
 }
 
 memory {
         # format = "Memory: used %used available %available"
-        format = "Memory used: %used"
+        format = " RAM used: %used "
         threshold_degraded = "1G"
         format_degraded = "MEMORY < %available"
+
 }
 
 tztime local {
-        format = "%Y-%m-%d %H:%M:%S"
+        format = "  %Y-%m-%d  %H:%M:%S"
 }
 
 volume master {
     device = "default"
     mixer_idx = "0"
     mixer = "Master"
-    format = "♪: %volume"
+    format = " ♪: %volume "
 }
