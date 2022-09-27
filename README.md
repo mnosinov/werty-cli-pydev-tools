@@ -31,7 +31,7 @@ sudo apt install konsole
 		- Copy in tmux:  
 		  1. Turn on tmux-vim mode - `<Prefix> + [`
 		  1. Navigate in tmux windows like in vim.
-		  1. To start normal selection press `Space`. To start line selection press `Shift+v`. To start vertical selection press `Ctrl+v` and then Space. To cancel selection press Esc.
+		  1. To start normal selection press `Space`. To start line selection press `Shift+v`. To start vertical selection press `Ctrl+v` and then Space. To cancel selection press `Esc`.
 		  1. After selection press Enter to copy to the clipboard.
 
 - install mc - two panels file manager.
@@ -43,28 +43,60 @@ sudo apt install konsole
 	```sh
 	sudo apt install zip unzip
 	```
-- install htop and btop - processes and resources monitoring tools. `sudo apt install htop btop`. btop has more info in comparison to htop
-- install tree. `sudo apt install htop tree` 
-- install ncdu. CLI utility to show sizes of the files in the current directory. `sudo apt install ncdu`. It is a one command replacement of `du -sh * | sort -h`. You can use either of them.
-- install ranger. CLI file browser. `sudo apt install ranger` 
-- install neofetch. CLI system info utility.  `sudo apt install neofetch` 
-- install git. `sudo apt install git` 
-- install vim. `sudo apt install vim` 
-- additional libraries for vim in Desktop Environment: `sudo apt install vim-gtk`
+- install htop and btop - processes and resources monitoring tools. 
+	```sh
+	sudo apt install htop btop
+	```
+	btop has more info in comparison to htop
+- install tree.
+	```sh
+	sudo apt install tree
+	```
+- install ncdu. CLI utility to show sizes of the files in the current directory. It is a one command replacement of `du -sh * | sort -h`. You can use either of them.
+	```sh
+	sudo apt install ncdu
+	```
+- install ranger. CLI file browser.
+	```sh
+	sudo apt install ranger
+	```
+- install neofetch. CLI system info utility.
+	```sh
+	sudo apt install neofetch
+	```
+- install git.
+	```sh
+	sudo apt install git
+	```
+- install vim.
+	```sh
+	sudo apt install vim
+	```
+- additional libraries for vim in Desktop Environment:
+	```sh
+	sudo apt install vim-gtk
+	```
 - copy .vimrc to ~. Use appropriate version of the file
-- install vim plugin manager Vundle: `sh install_vundle.sh`
+- install vim plugin manager Vundle:
+	```sh
+	sh install_vundle.sh
+	```
 - vim colors schema: copy werty-tty.vim color scheme to .vim/colors. Use appropriate version of the file
 - vim status bar colors schemas: copy badwolf.vim to
   `~/.vim/bundle/vim-airline-themes/autoload/airline/themes/`
-- vim spell checking (russian): copy ru.utf-8.spl and ru.utf-8.sug spell files to .vim/spell
+- vim spell checking (Russian): copy ru.utf-8.spl and ru.utf-8.sug spell files to .vim/spell
 - run `:PluginInstall` in vim
 - install YouCompleteMe vim plugin:
-     - install dependency libraries: build-essential, cmake, vim-nox and python3-dev:
-       `sudo apt install build-essential cmake vim-nox python3-dev`
+     - install dependency libraries: build-essential, cmake, vim-nox and python3-dev
+	```sh
+        sudo apt install build-essential cmake vim-nox python3-dev
+	```
      - install additional languages libraries: mono-complete, go, node, java and npm:
-       `sudo apt install mono-complete golang nodejs default-jdk npm`
+	```sh
+        sudo apt install mono-complete golang nodejs default-jdk npm
+	```
      - compile YCM:
-          ```
+          ```sh
           cd ~/.vim/bundle/YouCompleteMe
           python3 install.py --all
           ```
@@ -73,49 +105,55 @@ sudo apt install konsole
      - to load previously saved session: in vim `:source Session.vim`
      - to save current session: `:mks!`
 
-- fzf (fuzzy finder) - core engine for CtrlP vim plugin.
-  install fzf dependencies: silversearcher and ripgrep
-  Ag: requires The Silver Searcher (ag)
-  `sudo apt install silversearcher-ag`
-  Rg: requires ripgrep (rg)
-  `sudo apt install ripgrep`
+- fzf (Fuzzy Finder) - core engine for CtrlP vim plugin.
+  	- install fzf dependencies: silversearcher and ripgrep:
+	  Ag: requires The Silver Searcher (ag)
+		```sh
+		  sudo apt install silversearcher-ag
+		```
+	  Rg: requires ripgrep (rg)
+		```sh
+		  sudo apt install ripgrep
+		```
 
-	- fzf installation - download binaries for fzf. While in vim `:Files`
+	- fzf installation - download binaries for fzf: while in vim `:Files`
 
 - flake8 - vim syntax checking for python:
-     ```
+     ```sh
      sudo apt install python3-pip
      pip3 install flake8
      ```
 - ctags - fast navigation based on tags. Usage `Ctr+]` on variable, function or class.
-     ```
+     ```sh
      sudo apt install ctags exuberant-ctags
      ```
-- add next 2 lines to your .bashrc or .zshrc - to make vim your default CLI editor and viewer:
-	```
+- add next lines to your .bashrc or .zshrc - to make vim your default CLI editor and viewer:
+	```sh
 	export EDITOR=vim
 	export VISUAL=vim
 	```
 
-##this installation shorcuts and colors in vim
+## this installation shorcuts and colors in vim
 - F keys:
      - `<F2>` CtrlP in MRU (Most Recently Used files)
      - `<F3>` CtrlP in buffers (check color scheme in CtrlP window)
-     - `<F12>` NERDTree toggle (use o (opens in buffer) or t (opens in tab)
-       to open files, not Enter, see help)
      - `<F7>` flake8 check
      - `<F8>` tagbar (check jumping from tag to source code by `<Enter>`)
      - `<F9>` prev buffer
      - `<F10>` next buffer
      - `<F11>` last used buffer
-- colors in normal, insert, visual modes and in all plugins:
+     - `<F12>` NERDTree toggle (use o (opens in buffer) or t (opens in tab) to open files, not Enter, see help)
+- check colors in normal, insert, visual modes and in all plugins:
      - CtrlP
      - tagbar
      - NERDTree
 - prettier for frontend files (plugin vim-prettier):
-  `sudo npm install -g prettier`, then you can make source files (marked with //@format at the top), prettier by command :Prettier
+	```sh
+	sudo npm install -g prettier
+	```
+	  - you can make source files (marked with //@format at the top), prettier by command `:Prettier`
 
-##Additional color customization if necessary
+## Additional color customization if necessary
 - adjust next colors in werty-tty.vim see TODO blocks in werty-tty.vim file:
      - Orange
      - Maroon
