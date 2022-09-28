@@ -1,9 +1,9 @@
 # i3 windows manager
 
 i3 windows manager (i3wm) installation:  
-	```sh
-		sudo apt install i3
-	```
+```sh
+sudo apt install i3
+```
 
 ## i3-ressurect
 i3-resurrect - saving/restoring workspaces:
@@ -21,16 +21,16 @@ i3-resurrect - saving/restoring workspaces:
 
 ## rofi
 rofi - replacement for dmenu - application launcher
-	```sh
-		sudo apt install rofi
-	```
+```sh
+sudo apt install rofi
+```
 
 
 ## Language indicator
 i3wm current keyboard language layout indicator
-	```sh
-		sudo apt install gxkb
-	```
+```sh
+sudo apt install gxkb
+```
 
 
 ## Basic i3wm shortcuts
