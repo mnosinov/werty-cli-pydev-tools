@@ -2,7 +2,7 @@
 
 i3 windows manager (i3wm) installation:  
 	```sh
-	sudo apt install i3
+		sudo apt install i3
 	```
 
 ## i3-ressurect
@@ -22,14 +22,14 @@ i3-resurrect - saving/restoring workspaces:
 ## rofi
 rofi - replacement for dmenu - application launcher
 	```sh
-	sudo apt install rofi
+		sudo apt install rofi
 	```
 
 
 ## Language indicator
 i3wm current keyboard language layout indicator
 	```sh
-	sudo apt install gxkb
+		sudo apt install gxkb
 	```
 
 
@@ -70,7 +70,7 @@ i3wm current keyboard language layout indicator
 - ` $mod + Shift + l`    - move current window to the right
 - Remarks:
 	* if the next position differs in windows mode, the window that is being moving will be merged into new windows mode.
-	* you can use cursor keys (Left, Down, Up, Right) instead of vim shorcuts(h, j, k, l)
+	* you can use cursor keys (`Left`, `Down`, `Up`, `Right`) instead of vim shorcuts(`h`, `j`, `k`, `l`)
 
 ### Switching between workspaces:
 - `$mod + 1` - switch to workspace 1
@@ -113,9 +113,9 @@ restore workspaces (open): `$mod +o`, and then `1`, `2`, `3`, `4`, `5`, `6`, `7`
 
 ### Running sh scripts for GUI programs:  
 You can run any sh script in a new window using: 
-	```sh
-	i3-msg 'exec path/to/script.sh'
-	```  
+```sh
+i3-msg 'exec path/to/script.sh'
+```  
 e.g.: 
 ```sh
 i3-msg 'exec /home/user/pycharm-community-2021.3.3/bin/pycharm.sh'
