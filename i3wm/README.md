@@ -31,6 +31,16 @@ i3wm current keyboard language layout indicator
 ```sh
 sudo apt install gxkb
 ```
+To avoid reseting keyboard layouts confirm that content of `/etc/default/keyboard` is like 
+```
+XKBMODEL="pc105"
+XKBLAYOUT="us,ru"
+XKBVARIANT=""
+XKBOPTIONS="grp:alt_shift_toggle"
+
+BACKSPACE="guess"
+
+```
 
 
 ## Basic i3wm shortcuts
