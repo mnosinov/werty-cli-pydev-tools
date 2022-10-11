@@ -52,3 +52,15 @@ if __name__ == '__main__':
     with open("\\home\\pi\\.vimrc") as myfile:
         r = myfile.read()
 
+
+
+
+
+
+
+
+
+
+
+
+

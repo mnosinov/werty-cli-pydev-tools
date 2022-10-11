@@ -1,6 +1,6 @@
 # cli developer environment:
 
-For non tty modes - use terminal app - "Konsole" with some font and keyboard shortcuts (full screen mode change from `F11` to `Shift+F11`) customization, theme "White on Black".
+For non tty modes - use terminal app - "Konsole" with some font and keyboard shortcuts (full screen mode change from `F11` to `Shift+F11`) customization, theme "White on Black". If you are going to use bitmap fonts or your OS is not Debian based (e.g. Manjaro, or RHEL - because there is no Konsole in them)- there is an awesome and very customizable X11 terminal - `urxvt`. You can find more information and configuration file in `urxvt/` folder.
 
 ```
 sudo apt update
@@ -45,7 +45,8 @@ sudo apt install konsole
 	```
 - install htop and btop - processes and resources monitoring tools. 
 	```sh
-	sudo apt install htop btop
+	sudo apt install htop
+	sudo snap install btop
 	```
 	btop has more info in comparison to htop
 - install tree.
@@ -230,6 +231,7 @@ sudo apt install konsole
 	sudo apt install fonts-terminus
 	```
 - you can use a font that is modified `GNU Unifont` (Only one letter has been modified - letter 't' to look like in Linux tty). You can find this TTF font in `favourite_fonts/werty_gnu_unifont_t_letter_is_modified` folder
+- you can donwload bitmap unifont from `http://unifoundry.com/pub/unifont/` or install it by ```sudo apt install unifont```
 - in case if you have large screen resolution you can use `Terminus_werty` font. It is modified Terminus font to look like Unifont. It is bitmap font and you need to install it in Ubuntu manually
 - `gohufont` is a compact and good for coding font - folow the installation manual: http://keilhau.org/customizing-linux.html 
 - other nice fonts for coding in TTF: `Terminus_TTF, pragmata, share-techmono, akkurat-mono, dina, droid sans mono, envy code r, inconsolata, onuava`
