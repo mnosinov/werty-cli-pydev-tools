@@ -120,3 +120,13 @@ e.g.:
 ```sh
 i3-msg 'exec /home/user/pycharm-community-2021.3.3/bin/pycharm.sh'
 ```
+
+### font for i3
+to use installed bitmap fonts for i3status first you need to construct font string using ```xfontsel```
+```xfontsel``` - terminal command to construct font for bitmap fonts.
+samples of the result:
+
+font -misc-fixed-medium-r-normal-*-15-*-*-*-*-*-iso10646-*                       
+font -misc-fixed-medium-r-normal-*-13-*-*-*-*-*-iso10646-*                     
+font -misc-fixed-medium-r-semicondensed-*-13-*-*-*-*-*-iso10646-*              
+font -misc-fixed-medium-r-semicondensed-*-12-*-*-*-*-*-iso10646-*  
