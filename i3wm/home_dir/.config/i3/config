@@ -51,6 +51,7 @@ exec synclient TouchpadOff=1
 exec --no-startup-id blueman-applet
 
 # keyboard language layout
+exec --no-startup-id "sleep 3; gxkb"
 exec_always "setxkbmap -model pc104 -layout us,ru -variant ,, -option grp:alt_shift_toggle"
 # keyboard language layout indicator. sleep 3 - because it neends some delay for the previous command to take effect.
 exec --no-startup-id "sleep 3; gxkb"
@@ -246,12 +247,18 @@ bar {
 }
 
 # windows colorization
-# class                 border  backgr. text    indicator child_border
-client.focused_inactive #0d1010 #212121 #d9d9d9 #0d1010 #063340
-client.unfocused        #0d1010 #212121 #d9d9d9 #424242 #063340
-# client.focused          #d9d9d9 #cecece #000000 #d9d9d9 #09fe04
-client.focused          #d9d9d9 #cecece #000000 #d9d9d9 #004c99
-# client.focused          #d9d9d9 #cecece #000000 #d9d9d9 #00ff00
+# class                 border  	backgr. 	text    	indicator 	child_border
+client.focused_inactive #000000 	#042342 	#bfbfbf 	#0d1010 	#212121
+client.unfocused        #000000 	#212121 	#828385 	#424242 	#212121
+client.focused          #0e3b27 	#0e3b27 	#bfbfbf 	#0e3b27 	#017a44
+# client.focused          #d9d9d9 	#cecece 	#000000 	#d9d9d9 	#004c99
+# client.focused          #d9d9d9 	#cecece 	#000000 	#d9d9d9 	#09fe04
+# client.focused          #d9d9d9 	#cecece 	#000000 	#d9d9d9 	#017a44
+
+# active windows border width
+for_window [all] title_window_icon on
+for_window [class=".*"] title_format "%title"
+for_window [tiling] border pixel 3
 
 # For screenshots install :
 # apt install maim xclip copyq
@@ -263,11 +270,6 @@ bindsym Shift+Print exec --no-startup-id maim --format=png --select "/home/$USER
 ## Screenshots in clipboards
 bindsym Ctrl+Print exec --no-startup-id maim --format=png | xclip -selection clipboard -t image/png
 bindsym Ctrl+Shift+Print exec --no-startup-id maim --format=png --select | xclip -selection clipboard -t image/png
-
-# active windows border width
-for_window [all] title_window_icon on
-for_window [class=".*"] title_format "%title"
-for_window [tiling] border pixel 3
 
 # scratchpads
 # Make the currently focused window a scratchpad
