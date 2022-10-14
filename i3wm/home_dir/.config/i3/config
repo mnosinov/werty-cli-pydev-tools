@@ -29,6 +29,9 @@ font -misc-fixed-medium-r-normal-*-15-*-*-*-*-*-iso10646-*
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 # font pango:DejaVu Sans Mono 8
 
+# Screen resolution
+exec_always --no-startup-id "xrandr -s 1920x1080"
+
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
@@ -248,9 +251,9 @@ bar {
 
 # windows colorization
 # class                 border  	backgr. 	text    	indicator 	child_border
-client.focused_inactive #000000 	#042342 	#bfbfbf 	#0d1010 	#212121
-client.unfocused        #000000 	#212121 	#828385 	#424242 	#212121
-client.focused          #0e3b27 	#0e3b27 	#bfbfbf 	#0e3b27 	#017a44
+client.focused_inactive #000000 	#4d4d4d 	#ffffff 	#0d1010 	#212121
+client.unfocused        #000000 	#333333 	#808080 	#424242 	#212121
+client.focused          #000000 	#063e79		#ffffff 	#0e3b27 	#3d96f5
 # client.focused          #d9d9d9 	#cecece 	#000000 	#d9d9d9 	#004c99
 # client.focused          #d9d9d9 	#cecece 	#000000 	#d9d9d9 	#09fe04
 # client.focused          #d9d9d9 	#cecece 	#000000 	#d9d9d9 	#017a44
@@ -258,7 +261,7 @@ client.focused          #0e3b27 	#0e3b27 	#bfbfbf 	#0e3b27 	#017a44
 # active windows border width
 for_window [all] title_window_icon on
 for_window [class=".*"] title_format "%title"
-for_window [tiling] border pixel 3
+for_window [tiling] border pixel 1
 
 # For screenshots install :
 # apt install maim xclip copyq
