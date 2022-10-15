@@ -233,7 +233,7 @@ sudo apt install konsole
 - you can use a font that is modified `GNU Unifont` (Only one letter has been modified - letter 't' to look like in Linux tty). You can find this TTF font in `favourite_fonts/werty_gnu_unifont_t_letter_is_modified` folder
 - you can donwload bitmap unifont from `http://unifoundry.com/pub/unifont/` or install it by ```sudo apt install unifont```
 - in case if you have large screen resolution you can use `Terminus_werty` font. It is modified Terminus font to look like Unifont. It is bitmap font and you need to install it in Ubuntu manually
-- `gohufont` is a compact and good for coding font - folow the installation manual: http://keilhau.org/customizing-linux.html 
+- `gohufont` is a compact and good for coding font - folow the installation manual: 'http://keilhau.org/customizing-linux.html' or 'https://font.gohu.org'
 - other nice fonts for coding in TTF: `Terminus_TTF, pragmata, share-techmono, akkurat-mono, dina, droid sans mono, envy code r, inconsolata, onuava`
 - or you can install a bunch of bitmap fonts: https://github.com/Tecate/bitmap-fonts, dina font is also in this pack.
 
