@@ -1,1 +1,2 @@
-sudo apt install konsole btop
+sudo apt install konsole 
+sudo snap install btop
