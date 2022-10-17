@@ -59,6 +59,9 @@ exec_always "setxkbmap -model pc104 -layout us,ru -variant ,, -option grp:alt_sh
 # keyboard language layout indicator. sleep 3 - because it neends some delay for the previous command to take effect.
 exec --no-startup-id "sleep 3; gxkb"
 
+# mouse acceleration
+exec "xinput set-prop 'TPPS/2 Elan TrackPoint' 'libinput Accel Speed' -0.30"
+
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
