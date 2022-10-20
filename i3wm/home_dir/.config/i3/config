@@ -257,8 +257,8 @@ bar {
 
 # windows colorization
 # class                 border  	backgr. 	text    	indicator 	child_border
-client.focused_inactive #000000 	#4d4d4d 	#ffffff 	#0d1010 	#212121
-client.unfocused        #000000 	#333333 	#808080 	#424242 	#212121
+client.focused_inactive #000000 	#4d4d4d 	#ffffff 	#0d1010 	#000000
+client.unfocused        #000000 	#333333 	#808080 	#424242 	#000000
 client.focused          #000000 	#063e79		#ffffff 	#0e3b27 	#3d96f5
 # client.focused          #d9d9d9 	#cecece 	#000000 	#d9d9d9 	#004c99
 # client.focused          #d9d9d9 	#cecece 	#000000 	#d9d9d9 	#09fe04
