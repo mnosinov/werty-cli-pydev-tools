@@ -20,8 +20,9 @@ set $mod Mod4
 # font pango:Inconsolata 7
 # font pango:Bitstream Vera Sans Mono 8
 # font pango:DejaVu Sans Mono 8
-font -misc-fixed-medium-r-normal-*-15-*-*-*-*-*-iso10646-*
 # font -misc-fixed-medium-r-normal-*-13-*-*-*-*-*-iso10646-*
+font -misc-fixed-medium-r-normal-*-14-*-*-*-*-*-iso10646-*
+# font -misc-fixed-medium-r-normal-*-15-*-*-*-*-*-iso10646-*
 # font -misc-fixed-medium-r-semicondensed-*-13-*-*-*-*-*-iso10646-*
 # font -misc-fixed-medium-r-semicondensed-*-12-*-*-*-*-*-iso10646-*
 
@@ -302,7 +303,7 @@ mode "save" {
   bindsym 6 exec $i3_resurrect save -w 6-CAJO
   bindsym 7 exec $i3_resurrect save -w 7-CA
   bindsym 8 exec $i3_resurrect save -w 8-DIFF
-  bindsym 9 exec $i3_resurrect save -w 9
+  bindsym 9 exec $i3_resurrect save -w 9-BCAMP
   bindsym 0 exec $i3_resurrect save -w 0
 
   # Back to normal: Enter, Escape, or s
@@ -324,7 +325,7 @@ mode "restore" {
   bindsym 6 exec $i3_resurrect restore -w 6-CAJO
   bindsym 7 exec $i3_resurrect restore -w 7-CA
   bindsym 8 exec $i3_resurrect restore -w 8-DIFF
-  bindsym 9 exec $i3_resurrect restore -w 9
+  bindsym 9 exec $i3_resurrect restore -w 9-BCAMP
   bindsym 0 exec $i3_resurrect restore -w 0
 
   # Back to normal: Enter, Escape, or n
