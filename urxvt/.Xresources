@@ -55,9 +55,13 @@ URxvt.skipBuiltinGlyphs: True
 !URxvt.boldFont: -misc-fixed-medium-r-semicondensed--13-*-*-*-*-*-*-*
 
 ! slightly larger default font for urxvt
-!URxvt.boldFont: -misc-fixed-bold-r-normal--14-130-75-75-c-70-iso8859-1
+! URxvt.boldFont: -misc-fixed-bold-r-normal--14-130-75-75-c-70-iso8859-1
 URxvt.boldFont: -misc-fixed-medium-r-normal--14-130-75-75-c-70-iso8859-1
 URxvt.font: -misc-fixed-medium-r-normal--14-130-75-75-c-70-iso8859-1
+
+! ! GNU Unifont bitmap font - the same as in TTY
+! URxvt.boldFont: -gnu-*-*-*-*-*-*-*-*-*-*-*-*-*
+! URxvt.font: -gnu-*-*-*-*-*-*-*-*-*-*-*-*-*
 
 ! Unifont
 !URxvt.boldFont: xft:Unifont:style=Bold:antialias=True:size=12:minspace=True

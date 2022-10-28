@@ -37,6 +37,12 @@ exec_always --no-startup-id "xrandr -s 1920x1080"
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
 
+# keyboard language layout indicator. sleep 3 - because it neends some delay for the previous command to take effect.
+exec --no-startup-id "gxkb"
+
+# keyboard language layout
+exec --no-startup-id "sleep 10; setxkbmap -model pc104 -layout 'us,ru' -option 'grp:alt_shift_toggle'"
+
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
 
@@ -54,15 +60,6 @@ exec synclient TouchpadOff=1
 # Bluetooth Manager
 exec --no-startup-id blueman-applet
 
-# keyboard language layout
-exec --no-startup-id "sleep 3; gxkb"
-exec_always "setxkbmap -model pc104 -layout us,ru -variant ,, -option grp:alt_shift_toggle"
-# keyboard language layout indicator. sleep 3 - because it neends some delay for the previous command to take effect.
-exec --no-startup-id "sleep 3; gxkb"
-
-# mouse acceleration
-exec "xinput set-prop 'TPPS/2 Elan TrackPoint' 'libinput Accel Speed' -0.10"
-
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
@@ -75,6 +72,7 @@ floating_modifier $mod
 
 # start a terminal
 # bindsym $mod+Return exec i3-sensible-terminal
+# bindsym $mod+Return exec urxvt
 bindsym $mod+Return exec konsole
 
 # screen lock
@@ -265,10 +263,20 @@ client.focused          #000000 	#063e79		#ffffff 	#0e3b27 	#3d96f5
 # client.focused          #d9d9d9 	#cecece 	#000000 	#d9d9d9 	#09fe04
 # client.focused          #d9d9d9 	#cecece 	#000000 	#d9d9d9 	#017a44
 
+# borders
+default_border pixel 1
+default_floating_border pixel 1
+
+# borders at edge of the screen: none|vertical|horizontal|both|smart
+hide_edge_borders smart
+
 # active windows border width
 for_window [all] title_window_icon on
 for_window [class=".*"] title_format "%title"
 for_window [tiling] border pixel 1
+
+# mouse acceleration
+exec "xinput set-prop 'TPPS/2 Elan TrackPoint' 'libinput Accel Speed' -0.15"
 
 # For screenshots install :
 # apt install maim xclip copyq
@@ -287,7 +295,7 @@ bindsym Ctrl+Shift+Print exec --no-startup-id maim --format=png --select | xclip
 bindsym $mod+Shift+minus move scratchpad
 # bindsym $mod+minus scratchpad show; move position 0 0; resize set 1920 1080;
 # bindsym $mod+grave scratchpad show
-bindsym Mod1+Tab scratchpad show; move position 0 0; resize set 1920 1080; [tiling] border pixel 3; [floating] border none
+bindsym Mod1+Tab scratchpad show; move position 0 0; resize set 1920 1080; [tiling] border pixel 1; [floating] border none
 
 
 # i3-resurrect-------------------------------------------------------------BEGIN
@@ -392,3 +400,4 @@ bindsym $mod+o mode "restore"
 # 
 # bindsym $mod+o mode "restore"
 # i3-resurrect---------------------------------------------------------------END
+
