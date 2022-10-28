@@ -12,3 +12,5 @@ Customization of urxvt is possibile via editing ~/.Xresources. You can find my .
 `Ctrl + Shift + c` - to copy to clipboard.  
 `Ctrl + Shift + v` - to paste from clipboard.  
 
+### bitmap fonts exploring
+xfontsel - is the tool to explore bitmap fonts
