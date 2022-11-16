@@ -42,6 +42,12 @@ BACKSPACE="guess"
 
 ```
 
+## Screenshots
+for screenshots
+```sh
+sudo apt install maim xclip copyq
+```
+
 
 ## Basic i3wm shortcuts
 
