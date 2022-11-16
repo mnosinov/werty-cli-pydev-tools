@@ -190,7 +190,7 @@ sudo apt install konsole
 
 ## ZSH
 - Try zsh instead of bash. It is more advanced. There is addon to zsh called OhMyZsh (https://ohmyz.sh). You can customize you prompt the way you wish. 
-	You can find some .zshrc configuration files in zsh_confs folder
+	You can find some .zshrc configuration files in zsh_confs folder. If you want change prompt for the command line adjust default theme "bira" in .oh-my-zsh/themes/bira.zsh-theme file.
 
 
 ## Additional utilities
