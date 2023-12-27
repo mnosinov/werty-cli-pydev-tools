@@ -61,6 +61,7 @@ sudo apt install konsole
 	```sh
 	sudo apt install ranger
 	```
+ 	to install ranger glyphs. Use ranger plugin - https://github.com/alexanderjeurissen/ranger_devicons
 - install neofetch. CLI system info utility.
 	```sh
 	sudo apt install neofetch
