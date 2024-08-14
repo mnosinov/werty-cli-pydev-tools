@@ -1,0 +1,7 @@
+i3-msg 'rename workspace "1-PYCHARM" to "1-PyCharm"'
+i3-msg 'rename workspace "2-INSOMNIA" to "2-Insomnia"'
+i3-msg 'rename workspace "3-FIREFOX" to "3-Firefox"'
+i3-msg 'rename workspace "4-GOOGLECHROME" to "4-GoogleChrome"'
+i3-msg 'rename workspace "5-NOTES" to "5-Notes"'
+i3-msg 'rename workspace "6-TELEGRAM" to "6-Telegram"'
+i3-msg 'rename workspace "7-MAIL" to "7-Mail"'

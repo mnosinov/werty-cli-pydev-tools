@@ -22,6 +22,7 @@ set $mod Mod4
 # font pango:DejaVu Sans Mono 8
 # font -misc-fixed-medium-r-normal-*-13-*-*-*-*-*-iso10646-*
 font -misc-fixed-medium-r-normal-*-14-*-*-*-*-*-iso10646-*
+# font pango:RobotoMono Nerd Font Regular 8
 # font -misc-fixed-medium-r-normal-*-15-*-*-*-*-*-iso10646-*
 # font -misc-fixed-medium-r-semicondensed-*-13-*-*-*-*-*-iso10646-*
 # font -misc-fixed-medium-r-semicondensed-*-12-*-*-*-*-*-iso10646-*
@@ -48,7 +49,10 @@ exec --no-startup-id "sleep 10; setxkbmap -model pc104 -layout 'us,ru' -option '
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+# exec --no-startup-id xss-lock --transfer-sleep-lock -- i0lock --nofork
+# exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -c 04090e --nofork
+# exec xset s 1200 0
+
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -60,12 +64,20 @@ exec synclient TouchpadOff=1
 # Bluetooth Manager
 exec --no-startup-id blueman-applet
 
+# Enable second monitor - test some lines
+exec --no-startup-id "xrandr --output DP-1 --auto --right-of eDP-1"
+exec "xrandr --output DP-1 --auto --right-of eDP-1"
+exec xrandr --output DP-1 --auto --right-of eDP-1
+exec xrandr --output DP-1 --auto --right-of eDP-1 &
+
+
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+bindsym $mod+Tab workspace back_and_forth
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -76,7 +88,9 @@ floating_modifier $mod
 bindsym $mod+Return exec konsole
 
 # screen lock
-bindsym $mod+Control+l exec "i3lock -c 000000"
+# bindsym $mod+Control+l exec "i3lock -c 000000"
+bindsym $mod+Control+l exec "xflock4"
+exec_always --no-startup-id xset dpms 0 0 345600
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -236,6 +250,7 @@ focus_follows_mouse no 	# yes|no
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
+ font -misc-fixed-medium-r-normal-*-12-*-*-*-*-*-iso10646-*
  colors {
         background #000000
         # statusline #09fe04
@@ -248,10 +263,13 @@ bar {
         focused_workspace  #4c7899 #285577 #ffffff
         active_workspace   #333333 #5f676a #ffffff
         inactive_workspace #333333 #222222 #888888
-        urgent_workspace   #2f343a #900000 #ffffff
+        urgent_workspace   #2f343a #285577 #ffffff
     }
-    status_command i3status
+    # status_command i3status
+    status_command i3blocks
     # status_command i3blocks
+    wheel_up_cmd nop
+    wheel_down_cmd nop
 }
 
 # windows colorization
@@ -277,6 +295,7 @@ for_window [tiling] border pixel 1
 
 # mouse acceleration
 exec "xinput set-prop 'TPPS/2 Elan TrackPoint' 'libinput Accel Speed' -0.15"
+exec "~./enable_second_monitor.sh"
 
 # For screenshots install :
 # apt install maim xclip copyq
@@ -303,15 +322,15 @@ set $i3_resurrect i3-resurrect
 
 # Save workspace mode.
 mode "save" {
-  bindsym 1 exec $i3_resurrect save -w 1-FRNT
-  bindsym 2 exec $i3_resurrect save -w 2-ENG
-  bindsym 3 exec $i3_resurrect save -w 3-PR1
-  bindsym 4 exec $i3_resurrect save -w 4-PR2
-  bindsym 5 exec $i3_resurrect save -w 5-PR3
-  bindsym 6 exec $i3_resurrect save -w 6-CAJO
-  bindsym 7 exec $i3_resurrect save -w 7-CA
-  bindsym 8 exec $i3_resurrect save -w 8-DIFF
-  bindsym 9 exec $i3_resurrect save -w 9-BCAMP
+  bindsym 1 exec $i3_resurrect save -w 1-PyCharm
+  bindsym 2 exec $i3_resurrect save -w 2-Insomnia
+  bindsym 3 exec $i3_resurrect save -w 3-Firefox
+  bindsym 4 exec $i3_resurrect save -w 4-GoogleChrome
+  bindsym 5 exec $i3_resurrect save -w 5-Notes
+  bindsym 6 exec $i3_resurrect save -w 6-Telegram
+  bindsym 7 exec $i3_resurrect save -w 7-Mail
+  bindsym 8 exec $i3_resurrect save -w 8
+  bindsym 9 exec $i3_resurrect save -w 9
   bindsym 0 exec $i3_resurrect save -w 0
 
   # Back to normal: Enter, Escape, or s
@@ -325,16 +344,16 @@ bindsym $mod+p mode "save"
 
 # Restore workspace mode.
 mode "restore" {
-  bindsym 1 exec $i3_resurrect restore -w 1-FRNT
-  bindsym 2 exec $i3_resurrect restore -w 2-ENG
-  bindsym 3 exec $i3_resurrect restore -w 3-PR1
-  bindsym 4 exec $i3_resurrect restore -w 4-PR2
-  bindsym 5 exec $i3_resurrect restore -w 5-PR3
-  bindsym 6 exec $i3_resurrect restore -w 6-CAJO
-  bindsym 7 exec $i3_resurrect restore -w 7-CA
-  bindsym 8 exec $i3_resurrect restore -w 8-DIFF
-  bindsym 9 exec $i3_resurrect restore -w 9-BCAMP
-  bindsym 0 exec $i3_resurrect restore -w 0
+  bindsym 1 exec $i3_resurrect restore -w 1-PyCharm
+  bindsym 2 exec $i3_resurrect restore -w 2-Insomnia
+  bindsym 3 exec $i3_resurrect restore -w 3-Firefox
+  bindsym 4 exec $i3_resurrect restore -w 4-GoogleChrome
+  bindsym 5 exec $i3_resurrect restore -w 5-Notes
+  bindsym 6 exec $i3_resurrect restore -w 6-Telegram
+  bindsym 7 exec $i3_resurrect restore -w 7-Mail
+  bindsym 8 exec $i3_resurrect restore -w 8
+  bindsym 9 exec $i3_resurrect restore -w 9
+  bindsym 0 exec $i3_resurrect restore -w 0             0
 
   # Back to normal: Enter, Escape, or n
   bindsym Return mode "default"
@@ -344,6 +363,8 @@ mode "restore" {
 }
 
 bindsym $mod+o mode "restore"
+bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks
+bindsym --release Num_Lock  exec pkill -SIGRTMIN+11 i3blocks
 
 # # Save workspace mode.
 # mode "save" {

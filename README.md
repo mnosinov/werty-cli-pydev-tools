@@ -231,6 +231,7 @@ sudo apt install konsole
 	 ```sh
 	sudo apt install fonts-terminus
 	```
+or install bitmap fonts by this manual https://forums.linuxmint.com/viewtopic.php?t=352433
 - you can use a font that is modified `GNU Unifont` (Only one letter has been modified - letter 't' to look like in Linux tty). You can find this TTF font in `favourite_fonts/werty_gnu_unifont_t_letter_is_modified` folder
 - you can donwload bitmap unifont from `http://unifoundry.com/pub/unifont/` or install it by ```sudo apt install unifont```
 - in case if you have large screen resolution you can use `Terminus_werty` font. It is modified Terminus font to look like Unifont. It is bitmap font and you need to install it in Ubuntu manually: 

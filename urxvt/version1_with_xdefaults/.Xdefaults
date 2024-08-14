@@ -1,0 +1,69 @@
+################
+# URXVT settings
+################
+
+# transparency - true or false (default)
+# URxvt*transparent: true
+
+# tint with any color; i.e., blue, red, tomato4, olivedrab2, etc.
+#   some nice listings are at:
+#     http://www.nisrv.com/drupal/?q=node/11
+#     http://www.htmlgoodies.com/tutorials/colors/article.php/3478921
+# URxvt*tintColor: S_base03
+
+# shading - 0 to 99 darkens, 101 to 200 lightens.
+#   Don't use with tintColor; just use a darker or lighter color instead.
+# URxvt*shading: 15
+
+URxvt*saveLines: 50000
+
+URxvt*boldFont:
+# URxvt*font: -misc-fixed-medium-r-normal--14-130-75-75-c-70-iso8859-1
+# URxvt*font: xft:Terminess Nerd Font:style=regular:size=12
+# URxvt*font: xft:terminus:style=regular:size=8
+# URxvt*font: xft:terminus:style=regular:size=10
+URxvt.font: xft:terminus:style=regular:size=12
+
+
+# URxvt*font: -misc-fixed-medium-r-normal--15-120-100-100-c-90-iso8859-1
+# URxvt*font: -misc-fixed-medium-r-normal--18-120-100-100-c-90-iso8859-1
+# URxvt*font: -misc-fixed-medium-r-normal--13-100-100-100-c-70-iso8859-1
+# URxvt*font: -misc-fixed-medium-r-normal--13-120-75-75-c-70-iso8859-1
+# URxvt*font: -misc-fixed-medium-r-normal--13-120-75-75-c-80-iso8859-1
+
+
+
+# scrollbar - true (default) or false
+URxvt*scrollBar: false
+
+# scrollbar position - left=false (default) or right=true
+URxvt*scrollBar_right: false
+
+# scrollbar style - rxvt (default), plain, next, or xterm
+URxvt*scrollstyle: plain
+
+# -----------------------------------------------------------------------------additional quick customization
+urxvt*foreground: white
+urxvt*background: black
+
+*color0:  #2E3436
+*color1:  #a40000
+*color2:  #4E9A06
+*color3:  #C4A000
+*color4:  #3465A4
+*color5:  #75507B
+*color6:  #ce5c00
+*color7:  #babdb9
+*color8:  #555753
+*color9:  #EF2929
+*color10: #8AE234
+*color11: #FCE94F
+*color12: #729FCF
+*color13: #AD7FA8
+*color14: #fcaf3e
+*color15: #EEEEEC
+
+URxvt*keysym.Shift-Control-V: eval:paste_clipboard
+URxvt*keysym.Shift-Control-C: eval:selection_to_clipboard
+URxvt*iso14755: false
+URxvt*iso14755_52: fal

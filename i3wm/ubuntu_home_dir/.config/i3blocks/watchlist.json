@@ -1,0 +1,42 @@
+{
+	"COIN1": {
+		"coin": "BTC",
+		"high_stop": 59705,
+		"low_stop":  57700
+	},
+	"COIN2": {
+		"coin": "LTC",
+		"high_stop": 62.00,
+		"low_stop": 59.56
+	},
+	"COIN3": {
+		"coin": "TON",
+		"high_stop": 6.50,
+		"low_stop": 5.55
+	},
+	"COIN4": {
+		"coin": "",
+		"high_stop": 58.6,
+		"low_stop": 57.02
+	},
+	"COIN5": {
+		"coin": "",
+		"high_stop": 0.5194,
+		"low_stop": 0.5113
+	},
+	"COIN6": {
+		"coin": "",
+		"high_stop": 0.8505,
+		"low_stop": 0.8217
+	},
+	"COIN7": {
+		"coin": "",
+		"high_stop": 327.2,
+		"low_stop": 320
+	},
+	"COIN8": {
+		"coin": "",
+		"high_stop": 0.00001306,
+		"low_stop": 0.000010
+	}
+}
