@@ -113,7 +113,7 @@ autocmd BufNewFile, BufRead *.py
 	\ set autoindent
 	\ set fileformat=unix
 
-autocmd BufRead,BufNewFile *.js,*.htm,*.html,*.css
+autocmd BufRead,BufNewFile *.js,*.htm,*.html,*.css, *.json
 	\ setlocal tabstop=2
 	\ shiftwidth=2
 	\ softtabstop=2
