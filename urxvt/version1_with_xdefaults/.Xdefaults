@@ -18,14 +18,18 @@
 URxvt*saveLines: 50000
 
 URxvt*boldFont:
+URxvt*cursorBlink: false 
+URxvt*geometry: 400x400
+
+#URxvt*font: xft:unifont:style=regular:size=12
+URxvt*font: xft:unifont:style=regular:size=12:antialias=false
+# URxvt*font: xft:terminus:style=regular:size=12
 # URxvt*font: -misc-fixed-medium-r-normal--14-130-75-75-c-70-iso8859-1
-# URxvt*font: xft:Terminess Nerd Font:style=regular:size=12
 # URxvt*font: xft:terminus:style=regular:size=8
 # URxvt*font: xft:terminus:style=regular:size=10
-URxvt.font: xft:terminus:style=regular:size=12
 
 
-# URxvt*font: -misc-fixed-medium-r-normal--15-120-100-100-c-90-iso8859-1
+# URxvt*font: -misc-fixed-medium-r-normal--14--100-100-c-70-iso8859-1
 # URxvt*font: -misc-fixed-medium-r-normal--18-120-100-100-c-90-iso8859-1
 # URxvt*font: -misc-fixed-medium-r-normal--13-100-100-100-c-70-iso8859-1
 # URxvt*font: -misc-fixed-medium-r-normal--13-120-75-75-c-70-iso8859-1
