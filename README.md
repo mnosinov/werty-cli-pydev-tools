@@ -249,6 +249,7 @@ or install bitmap fonts by this manual https://forums.linuxmint.com/viewtopic.ph
 ## qutebrowser
 - minimalistic web browser with vi keymap support.
 - https://github.com/tinted-theming/base16-qutebrowser - there are some nice color schemas for the browser.
+- in folder "qutebrowser" you can find my customized color scheme - just copy it to ~/.config/qutebrowser directory
 
 ## Too long. Didn't read.
 Almost all this setup can be installed by installation scripts in `setup` folder.
