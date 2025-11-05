@@ -246,6 +246,10 @@ or install bitmap fonts by this manual https://forums.linuxmint.com/viewtopic.ph
 - great tiling manager - very effective for keyboard oriented utilization. Here is a good installation manual in Russian - https://laurvas.ru/i3/#installation .
 - you can find more detailed information about shortcuts of i3 in `i3wm/README.md`. You can find necessary configuration files in `home_dir` folder as well.
 
+## qutebrowser
+- minimalistic web browser with vi keymap support.
+- https://github.com/tinted-theming/base16-qutebrowser - there are some nice color schemas for the browser.
+
 ## Too long. Didn't read.
 Almost all this setup can be installed by installation scripts in `setup` folder.
 
