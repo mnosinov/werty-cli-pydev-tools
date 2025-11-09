@@ -58,6 +58,11 @@
         "[Gruvbox Material Dark]": {
             "tab.activeBackground": "#3a3734",   // фон активной вкладки
             //"tab.activeForeground": "#b5b4b0"    // (опционально) цвет текста активной вкладки
+            //"editor.background": "#1D2021"
+            //"editor.background": "#1B1B1C"
+            //"editor.background": "#2e2e2f"
+            "editor.background": "#222222"
+            
         }
     },
     "terminal.integrated.gpuAcceleration": "on",
