@@ -1,0 +1,71 @@
+!! Colorscheme ---------------------------------------------------------BEGIN
+
+! special
+!*.foreground: #93a1a1
+!*.background: #141c21
+!*.cursorColor: #afbfbf
+
+! black
+*.color0: #263640
+*.color8: #4a697d
+
+! red
+*.color1: #d12f2c
+*.color9: #fa3935
+
+! ! green
+! *.color2: #819400
+! *.color10: #a4bd00
+! 
+! ! yellow
+! *.color3: #b08500
+! *.color11: #d9a400
+
+! blue
+*.color4: #2587cc
+*.color12: #2ca2f5
+
+!! magenta
+!*.color5: #696ebf
+!*.color13: #8086e8
+!
+!! cyan
+!*.color6: #289c93
+!*.color14: #33c5ba
+!
+!! white
+!*.color7: #bfbaac
+!*.color15: #fdf6e3
+
+!! Colorscheme -----------------------------------------------------------END
+
+URxvt.foreground: #f9f9f9
+URxvt.background: #002b36
+
+URxvt.scrollBar: False
+URxvt.scrollstyle: next 	! rxvt next plain xterm
+
+URxvt.letterSpace: 0	! -1 0 1 
+URxvt.lineSpace: 0	! 1 2 
+URxvt.internalBorder: 1
+URxvt.skipBuiltinGlyphs: False
+
+! default font for urxvt
+! URxvt.font: -misc-fixed-medium-r-semicondensed--13-*-*-*-*-*-*-*
+! URxvt.boldFont: -misc-fixed-medium-r-semicondensed--13-*-*-*-*-*-*-*
+
+! slightly larger than default font for urxvt
+URxvt.boldFont: -misc-fixed-medium-r-normal--14-130-75-75-c-70-iso8859-1
+URxvt.font: 	-misc-fixed-medium-r-normal--14-130-75-75-c-70-iso8859-1
+
+! slightly smaller than default font for urxvt
+!URxvt.boldFont: -misc-fixed-medium-r-normal--12-110-75-75-c-60-iso8859-1
+!URxvt.font: 	 -misc-fixed-medium-r-normal--12-110-75-75-c-60-iso8859-1
+
+! Copy/Paste
+URxvt.keysym.Control-Shift-C: eval:selection_to_clipboard
+URxvt.keysym.Control-Shift-V: eval:paste_clipboard
+URxvt.keysym.C-S-0x43: eval:selection_to_clipboard
+URxvt.keysym.C-S-0x56: eval:paste_clipboard
+URxvt.perl-ext-common: default,-confirm-paste,-keycap
+
