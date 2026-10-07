@@ -66,6 +66,11 @@ sudo apt install konsole
 	```sh
 	sudo apt install neofetch
 	```
+- install bat. use it instead of cat.
+	```sh
+	sudo apt install cat
+    batcat somefile
+	```
 - install git.
 	```sh
 	sudo apt install git
