@@ -305,3 +305,7 @@ c.colors.webpage.bg = base11
 
 config.load_autoconfig()
 
+c.url.searchengines = {'DEFAULT': 'https://google.com{}'}
+config.bind('J', 'tab-prev')
+config.bind('K', 'tab-next')
+
