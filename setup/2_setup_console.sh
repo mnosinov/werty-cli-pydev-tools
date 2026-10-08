@@ -4,8 +4,8 @@ cp .bashrc_version_for_servers ~
 mv ~/.bashrc_version_for_servers ~/.bashrc
 cp .tmux.conf_v2_bash_version_for_servers ~
 mv ~/.tmux.conf_v2_bash_version_for_servers ~/.tmux.conf
-cp .vimrc_v7 ~
-mv ~/.vimrc_v7 ~/.vimrc
+cp .vimrc_v9 ~
+mv ~/.vimrc_v9 ~/.vimrc
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 . install_vundle.sh
 mkdir ~/.vim
