@@ -1,8 +1,7 @@
 #!/usr/bin/env python
 # Ported to Python from http://www.vim.org/scripts/script.php?script_id=1349
 
-print "Color indexes should be drawn in bold text of the same color."
-print
+print("Color indexes should be drawn in bold text of the same color.")
 
 colored = [0] + [0x5f + 40 * n for n in range(0, 5)]
 colored_palette = [
@@ -26,4 +25,4 @@ for (i, color) in enumerate(colored_palette + grayscale_palette, 16):
 	index = (bold + "%4s" + reset) % (i, str(i) + ':')
 	hex   = (normal + "%s" + reset) % (i, color)
 	newline = '\n' if i % 6 == 3 else ''
-	print index, hex, newline, 
+	print(index, hex, newline) 
