@@ -8,3 +8,17 @@ alias tree='eza --tree --group-directories-first'
 
 and then:
 source ~/.zshrc
+
+
+2. add shortcut "y" to yazi
+
+add the next lines at the bottom of you .bashrc or .zshrc
+
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
