@@ -1,5 +1,5 @@
 sudo apt install konsole 
-sudo snap install btop bottom
+sudo snap install btop bottom zellij
 
 # yazi - advanced file manager - better than ranger
 curl -fsSL https://yazi-rs.github.io/builds/yazi-keyring.gpg | sudo tee /usr/share/keyrings/yazi-keyring.gpg >/dev/null
